@@ -1,7 +1,7 @@
 {
   "social_sources": {
     "schema_version": 1,
-    "collected_at": "2026-11-26T16:54:45.962091+08:00",
+    "collected_at": "2026-11-26T16:59:21.818772+08:00",
     "window_hours": 24,
     "collector": "OpenBiliClaw本地桥",
     "requires_local_computer": true,
@@ -14,7 +14,7 @@
         "latest_published_at": null,
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "桥接任务中性关键词搜索",
-        "status": "暂无24小时内可用样本"
+        "status": "指定关键词搜索排队中；尚无有效样本"
       },
       {
         "platform": "douyin",
@@ -23,13 +23,13 @@
         "latest_published_at": null,
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "桥接任务中性关键词搜索",
-        "status": "暂无24小时内可用样本"
+        "status": "应用采集冷却；尚无有效样本"
       },
       {
         "platform": "twitter",
         "label": "X",
-        "n": 6,
-        "latest_published_at": "2026-11-26T16:11:26+08:00",
+        "n": 8,
+        "latest_published_at": "2026-11-26T16:51:31+08:00",
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "个性化发现池，非代表性抽样",
         "status": "有24小时内公开样本；尚未达到代表性验证"
