@@ -5,50 +5,42 @@
   "summary": {
     "date": "2026-11-26",
     "collected_at": "2026-11-26T16:11:05.517583+08:00",
-    "score": 46.049365632723905,
-    "community": 52.98790322580645,
+    "score": null,
+    "community": null,
     "trade": 35.6415592431001,
     "posts": 1584,
     "market_posts": 524,
     "platforms": 2,
-    "coverage": "可计算研究指数",
-    "model": "retail-v1.0"
+    "coverage": "社区分类尚未通过语义验证，且未覆盖小红书、抖音和X；暂停社区分及综合分，交易因子单独展示。",
+    "model": "retail-v1.0",
+    "sentiment_validated": false
   },
   "intraday": {
     "date": "2026-11-26",
     "collected_at": "2026-11-26T16:11:05.517583+08:00",
-    "community": 52.98790322580645,
+    "community": null,
     "n": 524,
     "platforms": 2,
-    "reliable": true,
+    "reliable": false,
     "chase": 0.3816793893129771,
     "panic": 1.5267175572519085,
-    "note": "当日社区样本，未与上一交易日交易分合成"
+    "note": "当日社区样本，未与上一交易日交易分合成",
+    "sentiment_validated": false
   },
-  "last_valid_daily": {
-    "date": "2026-11-26",
-    "collected_at": "2026-11-26T16:11:05.517583+08:00",
-    "score": 46.049365632723905,
-    "community": 52.98790322580645,
-    "trade": 35.6415592431001,
-    "posts": 1584,
-    "market_posts": 524,
-    "platforms": 2,
-    "coverage": "可计算研究指数",
-    "model": "retail-v1.0"
-  },
+  "last_valid_daily": null,
   "history": [
     {
       "date": "2026-11-23",
       "collected_at": "2026-11-24T00:12:06.914576+08:00",
-      "score": 57.69164068226418,
-      "community": 59.44408120057289,
+      "score": null,
+      "community": null,
       "trade": 55.062979904801125,
       "posts": 1563,
       "market_posts": 409,
       "platforms": 2,
       "coverage": "可计算研究指数",
-      "model": "retail-v1.0"
+      "model": "retail-v1.0",
+      "sentiment_validated": false
     },
     {
       "date": "2026-11-25",
@@ -60,94 +52,105 @@
       "market_posts": 4,
       "platforms": 0,
       "coverage": "数据覆盖不足，综合分暂不发布",
-      "model": "retail-v1.0"
+      "model": "retail-v1.0",
+      "sentiment_validated": false
     },
     {
       "date": "2026-11-26",
       "collected_at": "2026-11-26T16:11:05.517583+08:00",
-      "score": 46.049365632723905,
-      "community": 52.98790322580645,
+      "score": null,
+      "community": null,
       "trade": 35.6415592431001,
       "posts": 1584,
       "market_posts": 524,
       "platforms": 2,
       "coverage": "可计算研究指数",
-      "model": "retail-v1.0"
+      "model": "retail-v1.0",
+      "sentiment_validated": false
     }
   ],
   "community_history": [
     {
       "date": "2026-11-26",
       "collected_at": "2026-11-26T16:11:05.517583+08:00",
-      "community": 52.98790322580645,
+      "community": null,
       "n": 524,
       "platforms": 2,
       "reliable": true,
       "chase": 0.3816793893129771,
       "panic": 1.5267175572519085,
-      "note": "当日社区样本，未与上一交易日交易分合成"
+      "note": "当日社区样本，未与上一交易日交易分合成",
+      "sentiment_validated": false
     }
   ],
   "groups": [
     {
       "topic": "大盘",
-      "score": 52.98790322580645,
+      "score": null,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "n": 524,
       "chase": 0.3816793893129771,
       "panic": 1.5267175572519085,
       "novice": 0.0,
       "bull": 49,
       "bear": 19,
-      "neutral": 456,
-      "coverage": "跨平台样本达标"
+      "neutral": null,
+      "coverage": "跨平台样本达标",
+      "unclassified_or_mixed": 456,
+      "directional_match_pct": 12.977099236641221
     },
     {
       "topic": "国产算力",
-      "score": 51.03211009174312,
+      "score": null,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "n": 236,
       "chase": 0.423728813559322,
       "panic": 2.542372881355932,
       "novice": 0.0,
       "bull": 19,
       "bear": 10,
-      "neutral": 207,
-      "coverage": "跨平台样本达标"
+      "neutral": null,
+      "coverage": "跨平台样本达标",
+      "unclassified_or_mixed": 207,
+      "directional_match_pct": 12.288135593220339
     },
     {
       "topic": "PCB与电子材料",
-      "score": 52.915140415140414,
+      "score": null,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "n": 265,
       "chase": 1.509433962264151,
       "panic": 1.509433962264151,
       "novice": 0.0,
       "bull": 18,
       "bear": 7,
-      "neutral": 240,
-      "coverage": "跨平台样本达标"
+      "neutral": null,
+      "coverage": "跨平台样本达标",
+      "unclassified_or_mixed": 240,
+      "directional_match_pct": 9.433962264150944
     },
     {
       "topic": "光通信",
-      "score": 54.16666666666667,
+      "score": null,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "n": 217,
       "chase": 1.3824884792626728,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 20,
       "bear": 9,
-      "neutral": 188,
-      "coverage": "跨平台样本达标"
+      "neutral": null,
+      "coverage": "跨平台样本达标",
+      "unclassified_or_mixed": 188,
+      "directional_match_pct": 13.36405529953917
     },
     {
       "topic": "半导体材料",
-      "score": 46.875,
+      "score": null,
       "qualified": 1,
       "reliable": false,
       "n": 67,
@@ -156,12 +159,14 @@
       "novice": 0.0,
       "bull": 4,
       "bear": 8,
-      "neutral": 55,
-      "coverage": "覆盖不足，仅供观察"
+      "neutral": null,
+      "coverage": "覆盖不足，仅供观察",
+      "unclassified_or_mixed": 55,
+      "directional_match_pct": 17.91044776119403
     },
     {
       "topic": "存储",
-      "score": 52.22222222222222,
+      "score": null,
       "qualified": 1,
       "reliable": false,
       "n": 275,
@@ -170,54 +175,56 @@
       "novice": 0.0,
       "bull": 31,
       "bear": 19,
-      "neutral": 225,
-      "coverage": "覆盖不足，仅供观察"
+      "neutral": null,
+      "coverage": "覆盖不足，仅供观察",
+      "unclassified_or_mixed": 225,
+      "directional_match_pct": 18.181818181818183
     }
   ],
   "intraday_groups": [
     {
       "topic": "大盘",
-      "score": 52.98790322580645,
+      "score": null,
       "n": 524,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "chase": 0.3816793893129771,
       "panic": 1.5267175572519085,
       "novice": 0.0
     },
     {
       "topic": "国产算力",
-      "score": 51.03211009174312,
+      "score": null,
       "n": 236,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "chase": 0.423728813559322,
       "panic": 2.542372881355932,
       "novice": 0.0
     },
     {
       "topic": "PCB与电子材料",
-      "score": 52.915140415140414,
+      "score": null,
       "n": 265,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "chase": 1.509433962264151,
       "panic": 1.509433962264151,
       "novice": 0.0
     },
     {
       "topic": "光通信",
-      "score": 54.16666666666667,
+      "score": null,
       "n": 217,
       "qualified": 2,
-      "reliable": true,
+      "reliable": false,
       "chase": 1.3824884792626728,
       "panic": 0.0,
       "novice": 0.0
     },
     {
       "topic": "半导体材料",
-      "score": 46.875,
+      "score": null,
       "n": 67,
       "qualified": 1,
       "reliable": false,
@@ -227,7 +234,7 @@
     },
     {
       "topic": "存储",
-      "score": 52.22222222222222,
+      "score": null,
       "n": 275,
       "qualified": 1,
       "reliable": false,
@@ -247,34 +254,43 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "大盘",
       "platform": "东方财富股吧",
       "n": 400,
-      "score": 52.75,
+      "score": null,
       "chase": 0.25,
       "panic": 2.0,
       "novice": 0.0,
       "bull": 38,
       "bear": 16,
-      "neutral": 346,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 346,
+      "directional_match_pct": 13.5
     },
     {
       "topic": "大盘",
       "platform": "新浪股吧",
       "n": 124,
-      "score": 53.225806451612904,
+      "score": null,
       "chase": 0.8064516129032258,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 11,
       "bear": 3,
-      "neutral": 110,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 110,
+      "directional_match_pct": 11.290322580645162
     },
     {
       "topic": "大盘",
@@ -286,8 +302,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "大盘",
@@ -299,8 +318,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "国产算力",
@@ -312,21 +334,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "国产算力",
       "platform": "东方财富股吧",
       "n": 218,
-      "score": 52.06422018348624,
+      "score": null,
       "chase": 0.45871559633027525,
       "panic": 2.7522935779816513,
       "novice": 0.0,
       "bull": 19,
       "bear": 10,
-      "neutral": 189,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 189,
+      "directional_match_pct": 13.302752293577981
     },
     {
       "topic": "国产算力",
@@ -338,21 +366,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "国产算力",
       "platform": "淘股吧",
       "n": 18,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 18,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 18,
+      "directional_match_pct": 0.0
     },
     {
       "topic": "国产算力",
@@ -364,8 +398,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "PCB与电子材料",
@@ -377,21 +414,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "PCB与电子材料",
       "platform": "东方财富股吧",
       "n": 252,
-      "score": 51.98412698412699,
+      "score": null,
       "chase": 1.5873015873015872,
       "panic": 1.5873015873015872,
       "novice": 0.0,
       "bull": 17,
       "bear": 7,
-      "neutral": 228,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 228,
+      "directional_match_pct": 9.523809523809524
     },
     {
       "topic": "PCB与电子材料",
@@ -403,21 +446,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "PCB与电子材料",
       "platform": "淘股吧",
       "n": 13,
-      "score": 53.84615384615385,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 1,
       "bear": 0,
-      "neutral": 12,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 12,
+      "directional_match_pct": 7.6923076923076925
     },
     {
       "topic": "PCB与电子材料",
@@ -429,8 +478,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "光通信",
@@ -442,21 +494,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "光通信",
       "platform": "东方财富股吧",
       "n": 186,
-      "score": 51.88172043010753,
+      "score": null,
       "chase": 1.6129032258064515,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 16,
       "bear": 9,
-      "neutral": 161,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 161,
+      "directional_match_pct": 13.440860215053764
     },
     {
       "topic": "光通信",
@@ -468,21 +526,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "光通信",
       "platform": "淘股吧",
       "n": 31,
-      "score": 56.45161290322581,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 4,
       "bear": 0,
-      "neutral": 27,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 27,
+      "directional_match_pct": 12.903225806451612
     },
     {
       "topic": "光通信",
@@ -494,8 +558,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "半导体材料",
@@ -507,21 +574,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "半导体材料",
       "platform": "东方财富股吧",
       "n": 64,
-      "score": 46.875,
+      "score": null,
       "chase": 0.0,
       "panic": 9.375,
       "novice": 0.0,
       "bull": 4,
       "bear": 8,
-      "neutral": 52,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 52,
+      "directional_match_pct": 18.75
     },
     {
       "topic": "半导体材料",
@@ -533,21 +606,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "半导体材料",
       "platform": "淘股吧",
       "n": 3,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 3,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 3,
+      "directional_match_pct": 0.0
     },
     {
       "topic": "半导体材料",
@@ -559,8 +638,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "存储",
@@ -572,21 +654,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "存储",
       "platform": "东方财富股吧",
       "n": 270,
-      "score": 52.22222222222222,
+      "score": null,
       "chase": 0.37037037037037035,
       "panic": 2.962962962962963,
       "novice": 0.0,
       "bull": 31,
       "bear": 19,
-      "neutral": 220,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 220,
+      "directional_match_pct": 18.51851851851852
     },
     {
       "topic": "存储",
@@ -598,21 +686,27 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     },
     {
       "topic": "存储",
       "platform": "淘股吧",
       "n": 5,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 5,
-      "status": "已采集"
+      "neutral": null,
+      "status": "已采集",
+      "reliable": false,
+      "unclassified_or_mixed": 5,
+      "directional_match_pct": 0.0
     },
     {
       "topic": "存储",
@@ -624,8 +718,11 @@
       "novice": null,
       "bull": 0,
       "bear": 0,
-      "neutral": 0,
-      "status": "未取得有效样本"
+      "neutral": null,
+      "status": "未取得有效样本",
+      "reliable": false,
+      "unclassified_or_mixed": 0,
+      "directional_match_pct": null
     }
   ],
   "intraday_channels": [
@@ -633,145 +730,181 @@
       "topic": "大盘",
       "platform": "eastmoney",
       "n": 400,
-      "score": 52.75,
+      "score": null,
       "chase": 0.25,
       "panic": 2.0,
       "novice": 0.0,
       "bull": 38,
       "bear": 16,
-      "neutral": 346
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 346,
+      "directional_match_pct": 13.5
     },
     {
       "topic": "大盘",
       "platform": "sina",
       "n": 124,
-      "score": 53.225806451612904,
+      "score": null,
       "chase": 0.8064516129032258,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 11,
       "bear": 3,
-      "neutral": 110
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 110,
+      "directional_match_pct": 11.290322580645162
     },
     {
       "topic": "国产算力",
       "platform": "eastmoney",
       "n": 218,
-      "score": 52.06422018348624,
+      "score": null,
       "chase": 0.45871559633027525,
       "panic": 2.7522935779816513,
       "novice": 0.0,
       "bull": 19,
       "bear": 10,
-      "neutral": 189
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 189,
+      "directional_match_pct": 13.302752293577981
     },
     {
       "topic": "国产算力",
       "platform": "taoguba",
       "n": 18,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 18
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 18,
+      "directional_match_pct": 0.0
     },
     {
       "topic": "PCB与电子材料",
       "platform": "eastmoney",
       "n": 252,
-      "score": 51.98412698412699,
+      "score": null,
       "chase": 1.5873015873015872,
       "panic": 1.5873015873015872,
       "novice": 0.0,
       "bull": 17,
       "bear": 7,
-      "neutral": 228
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 228,
+      "directional_match_pct": 9.523809523809524
     },
     {
       "topic": "PCB与电子材料",
       "platform": "taoguba",
       "n": 13,
-      "score": 53.84615384615385,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 1,
       "bear": 0,
-      "neutral": 12
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 12,
+      "directional_match_pct": 7.6923076923076925
     },
     {
       "topic": "光通信",
       "platform": "eastmoney",
       "n": 186,
-      "score": 51.88172043010753,
+      "score": null,
       "chase": 1.6129032258064515,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 16,
       "bear": 9,
-      "neutral": 161
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 161,
+      "directional_match_pct": 13.440860215053764
     },
     {
       "topic": "光通信",
       "platform": "taoguba",
       "n": 31,
-      "score": 56.45161290322581,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 4,
       "bear": 0,
-      "neutral": 27
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 27,
+      "directional_match_pct": 12.903225806451612
     },
     {
       "topic": "半导体材料",
       "platform": "eastmoney",
       "n": 64,
-      "score": 46.875,
+      "score": null,
       "chase": 0.0,
       "panic": 9.375,
       "novice": 0.0,
       "bull": 4,
       "bear": 8,
-      "neutral": 52
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 52,
+      "directional_match_pct": 18.75
     },
     {
       "topic": "半导体材料",
       "platform": "taoguba",
       "n": 3,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 3
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 3,
+      "directional_match_pct": 0.0
     },
     {
       "topic": "存储",
       "platform": "eastmoney",
       "n": 270,
-      "score": 52.22222222222222,
+      "score": null,
       "chase": 0.37037037037037035,
       "panic": 2.962962962962963,
       "novice": 0.0,
       "bull": 31,
       "bear": 19,
-      "neutral": 220
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 220,
+      "directional_match_pct": 18.51851851851852
     },
     {
       "topic": "存储",
       "platform": "taoguba",
       "n": 5,
-      "score": 50.0,
+      "score": null,
       "chase": 0.0,
       "panic": 0.0,
       "novice": 0.0,
       "bull": 0,
       "bear": 0,
-      "neutral": 5
+      "neutral": null,
+      "reliable": false,
+      "unclassified_or_mixed": 5,
+      "directional_match_pct": 0.0
     }
   ],
   "factors": [
@@ -8960,5 +9093,22 @@
     "attempted_at": "2026-11-26T16:11:05.517583+08:00",
     "message": "采集完成；是否发布综合分取决于覆盖门槛"
   },
-  "schedule": "独立任务：北京时间工作日09:00—15:30每30分钟云端采集，16:15补充收盘快照；GitHub排队可能延迟。页面刷新仅重读已发布快照。"
+  "schedule": "独立任务：北京时间工作日09:00—15:30每30分钟云端采集，16:15补充收盘快照；GitHub排队可能延迟。页面刷新仅重读已发布快照。",
+  "assessment": {
+    "status": "withheld",
+    "validated": false,
+    "reason": "社区分类尚未通过语义验证，且未覆盖小红书、抖音和X；暂停社区分及综合分，交易因子单独展示。",
+    "missing_platforms": [
+      "小红书",
+      "抖音",
+      "X"
+    ],
+    "release_requirements": [
+      "独立人工标注样本与误判审查",
+      "未识别与真正中性分开",
+      "跨平台按时间和中性关键词抽样并去重",
+      "按平台披露覆盖与缺失，不按情绪结论选样"
+    ],
+    "note": "下列多空和恐慌命中只供审阅；多空方向不等于情绪，未命中不等于中性。"
+  }
 }

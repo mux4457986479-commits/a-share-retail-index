@@ -3,6 +3,7 @@ from pathlib import Path
 import json,sys,tempfile,subprocess,shutil,argparse,os
 from datetime import datetime,timezone,timedelta
 from engine import community,summarize,VERSION
+from publication_guard import withhold_sentiment
 R=Path(__file__).resolve().parents[1];TZ=timezone(timedelta(hours=8))
 def load(p,default):
  try:return json.loads(p.read_text(encoding='utf-8-sig'))
@@ -44,11 +45,11 @@ def main():
     if prior.get('history'):atomic(t/'history.json',prior['history'])
     subprocess.run([sys.executable,str(t/'collect.py')],check=True,timeout=300)
     raw=load(t/'latest.json',{})
-  data=prepare(raw,prior);atomic(dest,data)
+  data=withhold_sentiment(prepare(raw,prior));atomic(dest,data)
   print(json.dumps(dict(date=data['summary']['date'],score=data['summary']['score'],intraday=data['intraday'],history=len(data['history'])),ensure_ascii=False))
  except Exception as e:
   if prior:
-   prior['update']=dict(ok=False,attempted_at=datetime.now(TZ).isoformat(),message='本次更新失败，保留上次数据：'+type(e).__name__);atomic(dest,prior)
+   prior['update']=dict(ok=False,attempted_at=datetime.now(TZ).isoformat(),message='本次更新失败，保留上次数据：'+type(e).__name__);atomic(dest,withhold_sentiment(prior))
   print('Update failed; prior snapshot retained:',type(e).__name__,file=sys.stderr);return 1
  return 0
 if __name__=='__main__':sys.exit(main())
