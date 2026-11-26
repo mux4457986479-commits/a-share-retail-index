@@ -1,4 +1,87 @@
 {
+  "panels": {
+    "schema_version": 1,
+    "asof": "2026-11-26",
+    "total_score": null,
+    "market": {
+      "benchmarks": [
+        {
+          "name": "上证指数",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 3476.88,
+          "return5_pct": -2.8158384624415,
+          "drawdown20_pct": -5.773311544184001,
+          "rv20_annual_pct": 14.837084429119216,
+          "rv_percentile": 67.0886075949367,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        },
+        {
+          "name": "沪深300",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 3900.55,
+          "return5_pct": -2.1152668614047188,
+          "drawdown20_pct": -5.174781993528477,
+          "rv20_annual_pct": 14.060497783424172,
+          "rv_percentile": 29.11392405063291,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        },
+        {
+          "name": "创业板指",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 2189.82,
+          "return5_pct": -4.5139403664524185,
+          "drawdown20_pct": -14.86157064154553,
+          "rv20_annual_pct": 47.0712930139779,
+          "rv_percentile": 59.49367088607595,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        }
+      ],
+      "source": "腾讯指数日线",
+      "source_url": "https://web.ifzq.gtimg.cn/",
+      "definition": "20日对数收益样本标准差×√252；分位只对当前可用历史计算，至少60个既往有效观测，排除当日。已实现波动不是期权隐含波动，也不是VIX。",
+      "missing": [
+        "全市场涨跌广度",
+        "期权隐含波动率与Put/Call比",
+        "期货基差"
+      ]
+    },
+    "community": {
+      "status": "暂停评分",
+      "reason": "语义分类与跨平台代表性尚未验证；样本数、命中数与情绪强度分开。",
+      "total_score": null
+    },
+    "leverage": {
+      "date": "2026-11-25",
+      "status": "可用（偿还为推算）",
+      "unit": "亿元",
+      "balance": 21213.86,
+      "net1": -208.13999999999942,
+      "net5": -868.7599999999984,
+      "change5_pct": -3.9341346271411566,
+      "buy": 1038.1,
+      "repay_estimated": 1246.2399999999993,
+      "buy_repay_ratio": 0.8329856207472079,
+      "lag_calendar_days": 1,
+      "source": "同花顺沪深北两融汇总",
+      "source_url": "https://data.10jqka.com.cn/market/rzrq/",
+      "definition": "推算偿还=融资买入−融资余额日变化；余额变化反映未偿本金变化，不直接等于股价下跌。偿还不能区分主动还款与强平。",
+      "methodology_url": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+      "missing": [
+        "实际强平金额",
+        "账户维持担保比例分布",
+        "场外杠杆规模"
+      ]
+    }
+  },
   "social_sources": {
     "schema_version": 1,
     "collected_at": "2026-11-26T17:10:03.326694+08:00",
@@ -40,14 +123,14 @@
   },
   "schema_version": 1,
   "model": "retail-v1.0",
-  "generated_at": "2026-11-26T16:58:22.676378+08:00",
+  "generated_at": "2026-11-26T17:11:31.639651+08:00",
   "summary": {
     "date": "2026-11-26",
-    "collected_at": "2026-11-26T16:58:22.676378+08:00",
+    "collected_at": "2026-11-26T17:11:31.639651+08:00",
     "score": null,
     "community": null,
     "trade": 35.6415592431001,
-    "posts": 1458,
+    "posts": 1501,
     "market_posts": 484,
     "platforms": 2,
     "coverage": "社区分类和跨平台抽样尚未通过验证；暂停社区分及综合分，交易因子单独展示。社交桥样本单独披露，不冒充全体散户。",
@@ -56,13 +139,13 @@
   },
   "intraday": {
     "date": "2026-11-26",
-    "collected_at": "2026-11-26T16:58:22.676378+08:00",
+    "collected_at": "2026-11-26T17:11:31.639651+08:00",
     "community": null,
-    "n": 483,
+    "n": 484,
     "platforms": 2,
     "reliable": false,
-    "chase": 0.6211180124223602,
-    "panic": 1.0351966873706004,
+    "chase": 0.6198347107438017,
+    "panic": 1.2396694214876034,
     "note": "当日社区样本，未与上一交易日交易分合成",
     "sentiment_validated": false
   },
@@ -96,11 +179,11 @@
     },
     {
       "date": "2026-11-26",
-      "collected_at": "2026-11-26T16:58:22.676378+08:00",
+      "collected_at": "2026-11-26T17:11:31.639651+08:00",
       "score": null,
       "community": null,
       "trade": 35.6415592431001,
-      "posts": 1458,
+      "posts": 1501,
       "market_posts": 484,
       "platforms": 2,
       "coverage": "可计算研究指数",
@@ -111,13 +194,13 @@
   "community_history": [
     {
       "date": "2026-11-26",
-      "collected_at": "2026-11-26T16:58:22.676378+08:00",
+      "collected_at": "2026-11-26T17:11:31.639651+08:00",
       "community": null,
-      "n": 483,
+      "n": 484,
       "platforms": 2,
       "reliable": false,
-      "chase": 0.6211180124223602,
-      "panic": 1.0351966873706004,
+      "chase": 0.6198347107438017,
+      "panic": 1.2396694214876034,
       "note": "当日社区样本，未与上一交易日交易分合成",
       "sentiment_validated": false
     }
@@ -130,155 +213,155 @@
       "reliable": false,
       "n": 484,
       "chase": 0.6198347107438017,
-      "panic": 1.0330578512396693,
+      "panic": 1.2396694214876034,
       "novice": 0.0,
-      "bull": 38,
-      "bear": 16,
+      "bull": 46,
+      "bear": 21,
       "neutral": null,
       "coverage": "跨平台样本达标",
-      "unclassified_or_mixed": 430,
-      "directional_match_pct": 11.15702479338843
+      "unclassified_or_mixed": 417,
+      "directional_match_pct": 13.84297520661157
     },
     {
       "topic": "国产算力",
       "score": null,
       "qualified": 2,
       "reliable": false,
-      "n": 235,
-      "chase": 0.425531914893617,
-      "panic": 2.978723404255319,
+      "n": 234,
+      "chase": 0.42735042735042733,
+      "panic": 2.9914529914529915,
       "novice": 0.0,
       "bull": 18,
       "bear": 11,
       "neutral": null,
       "coverage": "跨平台样本达标",
-      "unclassified_or_mixed": 206,
-      "directional_match_pct": 12.340425531914894
+      "unclassified_or_mixed": 205,
+      "directional_match_pct": 12.393162393162394
     },
     {
       "topic": "PCB与电子材料",
       "score": null,
       "qualified": 2,
       "reliable": false,
-      "n": 262,
-      "chase": 1.5267175572519085,
-      "panic": 1.5267175572519085,
+      "n": 260,
+      "chase": 1.5384615384615385,
+      "panic": 1.5384615384615385,
       "novice": 0.0,
       "bull": 20,
       "bear": 8,
       "neutral": null,
       "coverage": "跨平台样本达标",
-      "unclassified_or_mixed": 234,
-      "directional_match_pct": 10.687022900763358
+      "unclassified_or_mixed": 232,
+      "directional_match_pct": 10.76923076923077
     },
     {
       "topic": "光通信",
       "score": null,
       "qualified": 2,
       "reliable": false,
-      "n": 186,
-      "chase": 0.5376344086021505,
-      "panic": 0.5376344086021505,
+      "n": 182,
+      "chase": 0.5494505494505495,
+      "panic": 0.5494505494505495,
       "novice": 0.0,
-      "bull": 17,
-      "bear": 7,
+      "bull": 16,
+      "bear": 8,
       "neutral": null,
       "coverage": "跨平台样本达标",
-      "unclassified_or_mixed": 162,
-      "directional_match_pct": 12.903225806451612
+      "unclassified_or_mixed": 158,
+      "directional_match_pct": 13.186813186813186
     },
     {
       "topic": "半导体材料",
       "score": null,
       "qualified": 1,
       "reliable": false,
-      "n": 18,
+      "n": 66,
       "chase": 0.0,
-      "panic": 16.666666666666668,
+      "panic": 9.090909090909092,
       "novice": 0.0,
-      "bull": 1,
-      "bear": 3,
+      "bull": 4,
+      "bear": 8,
       "neutral": null,
       "coverage": "覆盖不足，仅供观察",
-      "unclassified_or_mixed": 14,
-      "directional_match_pct": 22.22222222222222
+      "unclassified_or_mixed": 54,
+      "directional_match_pct": 18.181818181818183
     },
     {
       "topic": "存储",
       "score": null,
       "qualified": 1,
       "reliable": false,
-      "n": 273,
-      "chase": 0.3663003663003663,
-      "panic": 2.93040293040293,
+      "n": 275,
+      "chase": 0.36363636363636365,
+      "panic": 2.909090909090909,
       "novice": 0.0,
-      "bull": 31,
+      "bull": 30,
       "bear": 18,
       "neutral": null,
       "coverage": "覆盖不足，仅供观察",
-      "unclassified_or_mixed": 224,
-      "directional_match_pct": 17.94871794871795
+      "unclassified_or_mixed": 227,
+      "directional_match_pct": 17.454545454545453
     }
   ],
   "intraday_groups": [
     {
       "topic": "大盘",
       "score": null,
-      "n": 483,
+      "n": 484,
       "qualified": 2,
       "reliable": false,
-      "chase": 0.6211180124223602,
-      "panic": 1.0351966873706004,
+      "chase": 0.6198347107438017,
+      "panic": 1.2396694214876034,
       "novice": 0.0
     },
     {
       "topic": "国产算力",
       "score": null,
-      "n": 235,
+      "n": 234,
       "qualified": 2,
       "reliable": false,
-      "chase": 0.425531914893617,
-      "panic": 2.978723404255319,
+      "chase": 0.42735042735042733,
+      "panic": 2.9914529914529915,
       "novice": 0.0
     },
     {
       "topic": "PCB与电子材料",
       "score": null,
-      "n": 262,
+      "n": 260,
       "qualified": 2,
       "reliable": false,
-      "chase": 1.5267175572519085,
-      "panic": 1.5267175572519085,
+      "chase": 1.5384615384615385,
+      "panic": 1.5384615384615385,
       "novice": 0.0
     },
     {
       "topic": "光通信",
       "score": null,
-      "n": 186,
+      "n": 181,
       "qualified": 2,
       "reliable": false,
-      "chase": 0.5376344086021505,
-      "panic": 0.5376344086021505,
+      "chase": 0.5524861878453039,
+      "panic": 0.5524861878453039,
       "novice": 0.0
     },
     {
       "topic": "半导体材料",
       "score": null,
-      "n": 18,
+      "n": 66,
       "qualified": 1,
       "reliable": false,
       "chase": 0.0,
-      "panic": 16.666666666666668,
+      "panic": 9.090909090909092,
       "novice": 0.0
     },
     {
       "topic": "存储",
       "score": null,
-      "n": 273,
+      "n": 275,
       "qualified": 1,
       "reliable": false,
-      "chase": 0.3663003663003663,
-      "panic": 2.93040293040293,
+      "chase": 0.36363636363636365,
+      "panic": 2.909090909090909,
       "novice": 0.0
     }
   ],
@@ -302,34 +385,34 @@
     {
       "topic": "大盘",
       "platform": "东方财富股吧",
-      "n": 356,
+      "n": 351,
       "score": null,
-      "chase": 0.2808988764044944,
-      "panic": 1.404494382022472,
+      "chase": 0.2849002849002849,
+      "panic": 1.7094017094017093,
       "novice": 0.0,
-      "bull": 29,
-      "bear": 14,
+      "bull": 31,
+      "bear": 18,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 313,
-      "directional_match_pct": 12.07865168539326
+      "unclassified_or_mixed": 302,
+      "directional_match_pct": 13.96011396011396
     },
     {
       "topic": "大盘",
       "platform": "新浪股吧",
-      "n": 128,
+      "n": 133,
       "score": null,
-      "chase": 1.5625,
+      "chase": 1.5037593984962405,
       "panic": 0.0,
       "novice": 0.0,
-      "bull": 9,
-      "bear": 2,
+      "bull": 15,
+      "bear": 3,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 117,
-      "directional_match_pct": 8.59375
+      "unclassified_or_mixed": 115,
+      "directional_match_pct": 13.533834586466165
     },
     {
       "topic": "大盘",
@@ -414,7 +497,7 @@
     {
       "topic": "国产算力",
       "platform": "淘股吧",
-      "n": 21,
+      "n": 20,
       "score": null,
       "chase": 0.0,
       "panic": 0.0,
@@ -424,7 +507,7 @@
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 21,
+      "unclassified_or_mixed": 20,
       "directional_match_pct": 0.0
     },
     {
@@ -462,18 +545,18 @@
     {
       "topic": "PCB与电子材料",
       "platform": "东方财富股吧",
-      "n": 243,
+      "n": 241,
       "score": null,
-      "chase": 1.646090534979424,
-      "panic": 1.646090534979424,
+      "chase": 1.6597510373443984,
+      "panic": 1.6597510373443984,
       "novice": 0.0,
       "bull": 18,
       "bear": 8,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 217,
-      "directional_match_pct": 10.699588477366255
+      "unclassified_or_mixed": 215,
+      "directional_match_pct": 10.78838174273859
     },
     {
       "topic": "PCB与电子材料",
@@ -542,18 +625,18 @@
     {
       "topic": "光通信",
       "platform": "东方财富股吧",
-      "n": 155,
+      "n": 151,
       "score": null,
-      "chase": 0.6451612903225806,
-      "panic": 0.6451612903225806,
+      "chase": 0.6622516556291391,
+      "panic": 0.6622516556291391,
       "novice": 0.0,
-      "bull": 14,
-      "bear": 6,
+      "bull": 13,
+      "bear": 7,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 135,
-      "directional_match_pct": 12.903225806451612
+      "unclassified_or_mixed": 131,
+      "directional_match_pct": 13.245033112582782
     },
     {
       "topic": "光通信",
@@ -622,18 +705,18 @@
     {
       "topic": "半导体材料",
       "platform": "东方财富股吧",
-      "n": 16,
+      "n": 64,
       "score": null,
       "chase": 0.0,
-      "panic": 18.75,
+      "panic": 9.375,
       "novice": 0.0,
-      "bull": 1,
-      "bear": 3,
+      "bull": 4,
+      "bear": 8,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 12,
-      "directional_match_pct": 25.0
+      "unclassified_or_mixed": 52,
+      "directional_match_pct": 18.75
     },
     {
       "topic": "半导体材料",
@@ -707,13 +790,13 @@
       "chase": 0.37037037037037035,
       "panic": 2.962962962962963,
       "novice": 0.0,
-      "bull": 31,
+      "bull": 30,
       "bear": 18,
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 221,
-      "directional_match_pct": 18.14814814814815
+      "unclassified_or_mixed": 222,
+      "directional_match_pct": 17.77777777777778
     },
     {
       "topic": "存储",
@@ -734,7 +817,7 @@
     {
       "topic": "存储",
       "platform": "淘股吧",
-      "n": 3,
+      "n": 5,
       "score": null,
       "chase": 0.0,
       "panic": 0.0,
@@ -744,7 +827,7 @@
       "neutral": null,
       "status": "已采集",
       "reliable": false,
-      "unclassified_or_mixed": 3,
+      "unclassified_or_mixed": 5,
       "directional_match_pct": 0.0
     },
     {
@@ -768,32 +851,32 @@
     {
       "topic": "大盘",
       "platform": "eastmoney",
-      "n": 356,
+      "n": 351,
       "score": null,
-      "chase": 0.2808988764044944,
-      "panic": 1.404494382022472,
+      "chase": 0.2849002849002849,
+      "panic": 1.7094017094017093,
       "novice": 0.0,
-      "bull": 29,
-      "bear": 14,
+      "bull": 31,
+      "bear": 18,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 313,
-      "directional_match_pct": 12.07865168539326
+      "unclassified_or_mixed": 302,
+      "directional_match_pct": 13.96011396011396
     },
     {
       "topic": "大盘",
       "platform": "sina",
-      "n": 127,
+      "n": 133,
       "score": null,
-      "chase": 1.5748031496062993,
+      "chase": 1.5037593984962405,
       "panic": 0.0,
       "novice": 0.0,
-      "bull": 9,
-      "bear": 2,
+      "bull": 15,
+      "bear": 3,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 116,
-      "directional_match_pct": 8.661417322834646
+      "unclassified_or_mixed": 115,
+      "directional_match_pct": 13.533834586466165
     },
     {
       "topic": "国产算力",
@@ -813,7 +896,7 @@
     {
       "topic": "国产算力",
       "platform": "taoguba",
-      "n": 21,
+      "n": 20,
       "score": null,
       "chase": 0.0,
       "panic": 0.0,
@@ -822,23 +905,23 @@
       "bear": 0,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 21,
+      "unclassified_or_mixed": 20,
       "directional_match_pct": 0.0
     },
     {
       "topic": "PCB与电子材料",
       "platform": "eastmoney",
-      "n": 243,
+      "n": 241,
       "score": null,
-      "chase": 1.646090534979424,
-      "panic": 1.646090534979424,
+      "chase": 1.6597510373443984,
+      "panic": 1.6597510373443984,
       "novice": 0.0,
       "bull": 18,
       "bear": 8,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 217,
-      "directional_match_pct": 10.699588477366255
+      "unclassified_or_mixed": 215,
+      "directional_match_pct": 10.78838174273859
     },
     {
       "topic": "PCB与电子材料",
@@ -858,17 +941,17 @@
     {
       "topic": "光通信",
       "platform": "eastmoney",
-      "n": 155,
+      "n": 150,
       "score": null,
-      "chase": 0.6451612903225806,
-      "panic": 0.6451612903225806,
+      "chase": 0.6666666666666666,
+      "panic": 0.6666666666666666,
       "novice": 0.0,
-      "bull": 14,
+      "bull": 13,
       "bear": 6,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 135,
-      "directional_match_pct": 12.903225806451612
+      "unclassified_or_mixed": 131,
+      "directional_match_pct": 12.666666666666666
     },
     {
       "topic": "光通信",
@@ -888,17 +971,17 @@
     {
       "topic": "半导体材料",
       "platform": "eastmoney",
-      "n": 16,
+      "n": 64,
       "score": null,
       "chase": 0.0,
-      "panic": 18.75,
+      "panic": 9.375,
       "novice": 0.0,
-      "bull": 1,
-      "bear": 3,
+      "bull": 4,
+      "bear": 8,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 12,
-      "directional_match_pct": 25.0
+      "unclassified_or_mixed": 52,
+      "directional_match_pct": 18.75
     },
     {
       "topic": "半导体材料",
@@ -923,17 +1006,17 @@
       "chase": 0.37037037037037035,
       "panic": 2.962962962962963,
       "novice": 0.0,
-      "bull": 31,
+      "bull": 30,
       "bear": 18,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 221,
-      "directional_match_pct": 18.14814814814815
+      "unclassified_or_mixed": 222,
+      "directional_match_pct": 17.77777777777778
     },
     {
       "topic": "存储",
       "platform": "taoguba",
-      "n": 3,
+      "n": 5,
       "score": null,
       "chase": 0.0,
       "panic": 0.0,
@@ -942,7 +1025,7 @@
       "bear": 0,
       "neutral": null,
       "reliable": false,
-      "unclassified_or_mixed": 3,
+      "unclassified_or_mixed": 5,
       "directional_match_pct": 0.0
     }
   ],
@@ -991,211 +1074,211 @@
     {
       "date": "2026-08-04",
       "trade": null,
-      "momentum": 59.65002284162931,
-      "activity": 34.72222222222222,
+      "momentum": null,
+      "activity": null,
       "financing": null
     },
     {
       "date": "2026-08-05",
       "trade": null,
       "momentum": 61.98925047483823,
-      "activity": 57.333333333333336,
+      "activity": 59.72222222222222,
       "financing": null
     },
     {
       "date": "2026-08-06",
       "trade": null,
       "momentum": 71.82931420260218,
-      "activity": 47.43589743589744,
+      "activity": 49.333333333333336,
       "financing": null
     },
     {
       "date": "2026-08-07",
       "trade": null,
       "momentum": 69.4697513254729,
-      "activity": 41.97530864197531,
+      "activity": 43.58974358974359,
       "financing": null
     },
     {
       "date": "2026-08-10",
       "trade": null,
       "momentum": 74.53485548289194,
-      "activity": 27.380952380952383,
+      "activity": 28.395061728395063,
       "financing": null
     },
     {
       "date": "2026-08-11",
       "trade": null,
       "momentum": 60.02768984203528,
-      "activity": 14.942528735632184,
+      "activity": 15.476190476190474,
       "financing": null
     },
     {
       "date": "2026-08-12",
       "trade": null,
       "momentum": 57.2613182175405,
-      "activity": 6.666666666666667,
+      "activity": 6.896551724137931,
       "financing": null
     },
     {
       "date": "2026-08-13",
       "trade": null,
       "momentum": 54.93133229187644,
-      "activity": 43.01075268817204,
+      "activity": 44.44444444444444,
       "financing": null
     },
     {
       "date": "2026-08-14",
       "trade": null,
       "momentum": 51.397321986012535,
-      "activity": 11.458333333333334,
+      "activity": 11.827956989247312,
       "financing": null
     },
     {
       "date": "2026-08-17",
       "trade": null,
       "momentum": 61.622644599275496,
-      "activity": 12.121212121212121,
+      "activity": 12.5,
       "financing": null
     },
     {
       "date": "2026-08-18",
       "trade": null,
       "momentum": 61.942148639749036,
-      "activity": 21.568627450980394,
+      "activity": 22.22222222222222,
       "financing": null
     },
     {
       "date": "2026-08-19",
       "trade": null,
       "momentum": 38.21143960430607,
-      "activity": 46.666666666666664,
+      "activity": 48.03921568627451,
       "financing": null
     },
     {
       "date": "2026-08-20",
       "trade": null,
       "momentum": 42.265516306783795,
-      "activity": 12.037037037037038,
+      "activity": 12.380952380952381,
       "financing": null
     },
     {
       "date": "2026-08-21",
       "trade": null,
       "momentum": 43.67911082724088,
-      "activity": 0.9009009009009009,
+      "activity": 0.9259259259259259,
       "financing": null
     },
     {
       "date": "2026-08-24",
       "trade": null,
       "momentum": 25.795180537870287,
-      "activity": 8.771929824561404,
+      "activity": 9.00900900900901,
       "financing": null
     },
     {
       "date": "2026-08-25",
       "trade": null,
       "momentum": 25.803672865200234,
-      "activity": 4.273504273504273,
+      "activity": 4.385964912280702,
       "financing": null
     },
     {
       "date": "2026-08-26",
       "trade": null,
       "momentum": 48.03827049019866,
-      "activity": 5.0,
+      "activity": 5.128205128205129,
       "financing": null
     },
     {
       "date": "2026-08-27",
       "trade": null,
       "momentum": 52.5579401800046,
-      "activity": 23.577235772357724,
+      "activity": 24.166666666666668,
       "financing": null
     },
     {
       "date": "2026-08-28",
       "trade": null,
       "momentum": 45.95799192530317,
-      "activity": 21.42857142857143,
+      "activity": 21.951219512195124,
       "financing": null
     },
     {
       "date": "2026-08-31",
       "trade": null,
       "momentum": 57.07030825125177,
-      "activity": 48.06201550387597,
+      "activity": 49.20634920634921,
       "financing": null
     },
     {
       "date": "2026-09-01",
       "trade": null,
       "momentum": 55.85046275465255,
-      "activity": 45.45454545454545,
+      "activity": 46.51162790697674,
       "financing": null
     },
     {
       "date": "2026-09-02",
       "trade": null,
       "momentum": 44.66543900213888,
-      "activity": 16.296296296296298,
+      "activity": 16.666666666666668,
       "financing": null
     },
     {
       "date": "2026-09-03",
       "trade": null,
       "momentum": 38.876863243805325,
-      "activity": 7.971014492753623,
+      "activity": 8.148148148148149,
       "financing": null
     },
     {
       "date": "2026-09-04",
       "trade": null,
       "momentum": 40.15006340947218,
-      "activity": 34.751773049645394,
+      "activity": 35.507246376811594,
       "financing": null
     },
     {
       "date": "2026-09-07",
       "trade": null,
       "momentum": 44.01597357093533,
-      "activity": 6.944444444444445,
+      "activity": 7.092198581560283,
       "financing": null
     },
     {
       "date": "2026-09-08",
       "trade": null,
       "momentum": 44.79221707632002,
-      "activity": 18.36734693877551,
+      "activity": 18.75,
       "financing": null
     },
     {
       "date": "2026-09-09",
       "trade": null,
       "momentum": 53.48101183388716,
-      "activity": 12.666666666666666,
+      "activity": 12.925170068027212,
       "financing": null
     },
     {
       "date": "2026-09-10",
       "trade": null,
       "momentum": 50.82360612214585,
-      "activity": 1.9607843137254903,
+      "activity": 2.0,
       "financing": null
     },
     {
       "date": "2026-09-11",
       "trade": null,
       "momentum": 48.62971229044795,
-      "activity": 36.53846153846154,
+      "activity": 37.25490196078431,
       "financing": null
     },
     {
       "date": "2026-09-14",
       "trade": null,
       "momentum": 38.98756548418711,
-      "activity": 1.2578616352201257,
+      "activity": 1.2820512820512822,
       "financing": null
     },
     {
@@ -1209,42 +1292,42 @@
       "date": "2026-09-16",
       "trade": null,
       "momentum": 41.946809198508234,
-      "activity": 6.0606060606060606,
+      "activity": 6.172839506172839,
       "financing": null
     },
     {
       "date": "2026-09-17",
       "trade": null,
       "momentum": 42.27369367018405,
-      "activity": 6.5476190476190474,
+      "activity": 6.666666666666667,
       "financing": null
     },
     {
       "date": "2026-09-18",
       "trade": null,
       "momentum": 53.45673579858859,
-      "activity": 18.128654970760234,
+      "activity": 18.452380952380953,
       "financing": null
     },
     {
       "date": "2026-09-21",
       "trade": null,
       "momentum": 60.76673188751942,
-      "activity": 28.735632183908045,
+      "activity": 29.239766081871345,
       "financing": null
     },
     {
       "date": "2026-09-22",
       "trade": null,
       "momentum": 65.13052017193831,
-      "activity": 29.37853107344633,
+      "activity": 29.885057471264368,
       "financing": null
     },
     {
       "date": "2026-09-23",
       "trade": null,
       "momentum": 56.73007288765744,
-      "activity": 8.333333333333334,
+      "activity": 8.47457627118644,
       "financing": null
     },
     {
@@ -1645,7 +1728,7 @@
       "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=zssh000001&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
       "raw_count": 200,
-      "filtered_count": 116,
+      "filtered_count": 118,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1665,7 +1748,7 @@
       "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=zssz399006&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
       "raw_count": 200,
-      "filtered_count": 126,
+      "filtered_count": 123,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1685,7 +1768,7 @@
       "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=688256&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
       "raw_count": 200,
-      "filtered_count": 128,
+      "filtered_count": 127,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1705,7 +1788,7 @@
       "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=688041&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
       "raw_count": 200,
-      "filtered_count": 140,
+      "filtered_count": 141,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1715,7 +1798,7 @@
       "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=002463&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
       "raw_count": 200,
-      "filtered_count": 140,
+      "filtered_count": 137,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1731,21 +1814,21 @@
     {
       "topic": "PCB与电子材料",
       "code": "600183",
+      "platform": "eastmoney",
+      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=600183&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
+      "status": "成功",
+      "raw_count": 200,
+      "filtered_count": 138,
+      "note": "有页数上限；非全量社区，非随机抽样"
+    },
+    {
+      "topic": "PCB与电子材料",
+      "code": "600183",
       "platform": "taoguba",
       "url": "https://www.tgb.cn/quotes/sh600183",
       "status": "成功",
       "raw_count": 20,
       "filtered_count": 17,
-      "note": "有页数上限；非全量社区，非随机抽样"
-    },
-    {
-      "topic": "光通信",
-      "code": "300308",
-      "platform": "eastmoney",
-      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=300308&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
-      "status": "成功",
-      "raw_count": 202,
-      "filtered_count": 78,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1759,13 +1842,13 @@
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
-      "topic": "PCB与电子材料",
-      "code": "600183",
-      "platform": "eastmoney",
-      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=600183&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
+      "topic": "光通信",
+      "code": "300394",
+      "platform": "taoguba",
+      "url": "https://www.tgb.cn/quotes/sz300394",
       "status": "成功",
-      "raw_count": 200,
-      "filtered_count": 137,
+      "raw_count": 20,
+      "filtered_count": 19,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1780,22 +1863,12 @@
     },
     {
       "topic": "光通信",
-      "code": "300394",
-      "platform": "taoguba",
-      "url": "https://www.tgb.cn/quotes/sz300394",
+      "code": "300308",
+      "platform": "eastmoney",
+      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=300308&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
       "status": "成功",
-      "raw_count": 20,
-      "filtered_count": 19,
-      "note": "有页数上限；非全量社区，非随机抽样"
-    },
-    {
-      "topic": "半导体材料",
-      "code": "688019",
-      "platform": "taoguba",
-      "url": "https://www.tgb.cn/quotes/sh688019",
-      "status": "成功",
-      "raw_count": 20,
-      "filtered_count": 20,
+      "raw_count": 202,
+      "filtered_count": 78,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1810,9 +1883,39 @@
     },
     {
       "topic": "半导体材料",
+      "code": "688019",
+      "platform": "taoguba",
+      "url": "https://www.tgb.cn/quotes/sh688019",
+      "status": "成功",
+      "raw_count": 20,
+      "filtered_count": 20,
+      "note": "有页数上限；非全量社区，非随机抽样"
+    },
+    {
+      "topic": "半导体材料",
       "code": "300054",
       "platform": "taoguba",
       "url": "https://www.tgb.cn/quotes/sz300054",
+      "status": "成功",
+      "raw_count": 20,
+      "filtered_count": 17,
+      "note": "有页数上限；非全量社区，非随机抽样"
+    },
+    {
+      "topic": "半导体材料",
+      "code": "300054",
+      "platform": "eastmoney",
+      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=300054&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
+      "status": "成功",
+      "raw_count": 200,
+      "filtered_count": 152,
+      "note": "有页数上限；非全量社区，非随机抽样"
+    },
+    {
+      "topic": "存储",
+      "code": "603986",
+      "platform": "taoguba",
+      "url": "https://www.tgb.cn/quotes/sh603986",
       "status": "成功",
       "raw_count": 20,
       "filtered_count": 17,
@@ -1826,26 +1929,6 @@
       "status": "成功",
       "raw_count": 200,
       "filtered_count": 164,
-      "note": "有页数上限；非全量社区，非随机抽样"
-    },
-    {
-      "topic": "半导体材料",
-      "code": "300054",
-      "platform": "eastmoney",
-      "url": "https://gbapi.eastmoney.com/webarticlelist/api/Article/Articlelist?code=300054&sorttype=1&ps=100&p=2&from=CommonBaPost&version=200&product=Guba&plat=Web",
-      "status": "失败",
-      "raw_count": null,
-      "filtered_count": 0,
-      "note": "Remote end closed connection without response"
-    },
-    {
-      "topic": "存储",
-      "code": "603986",
-      "platform": "taoguba",
-      "url": "https://www.tgb.cn/quotes/sh603986",
-      "status": "成功",
-      "raw_count": 20,
-      "filtered_count": 17,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1870,22 +1953,12 @@
     },
     {
       "topic": "大盘",
-      "code": "zssz399006",
-      "platform": "sina",
-      "url": "https://guba.sina.cn/api/?s=h5bar&bid=9394&num=50",
-      "status": "成功",
-      "raw_count": 50,
-      "filtered_count": 41,
-      "note": "有页数上限；非全量社区，非随机抽样"
-    },
-    {
-      "topic": "大盘",
       "code": "zssh000001",
       "platform": "sina",
       "url": "https://guba.sina.cn/api/?s=h5bar&bid=9279&num=50",
       "status": "成功",
       "raw_count": 50,
-      "filtered_count": 46,
+      "filtered_count": 48,
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
@@ -1899,22 +1972,32 @@
       "note": "有页数上限；非全量社区，非随机抽样"
     },
     {
+      "topic": "大盘",
+      "code": "zssz399006",
+      "platform": "sina",
+      "url": "https://guba.sina.cn/api/?s=h5bar&bid=9394&num=50",
+      "status": "成功",
+      "raw_count": 50,
+      "filtered_count": 43,
+      "note": "有页数上限；非全量社区，非随机抽样"
+    },
+    {
       "platform": "腾讯日线",
       "status": "成功",
       "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000001,day,,,100,qfq",
-      "note": "101条，截止2026-11-26"
+      "note": "100条，截止2026-11-26"
     },
     {
       "platform": "腾讯日线",
       "status": "成功",
       "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz399006,day,,,100,qfq",
-      "note": "101条，截止2026-11-26"
+      "note": "100条，截止2026-11-26"
     },
     {
       "platform": "腾讯日线",
       "status": "成功",
       "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh000300,day,,,100,qfq",
-      "note": "101条，截止2026-11-26"
+      "note": "100条，截止2026-11-26"
     },
     {
       "platform": "同花顺两融",
@@ -1924,6 +2007,930 @@
     }
   ],
   "posts": [
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "明天碰上方20日线，下周新一轮暴跌开始，明天最后的逃命机会",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "暴跌、逃命",
+      "url": "https://guba.eastmoney.com/news,300308,1802105726.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "成品都禁止了，何况原材料",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802105546.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "逐渐给股民养成了下午2点半买入，次日开盘卖出做T的习惯",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "买入、卖出",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087836"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "券商都跌多久了，券商不涨，大盘还会再创新低！",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087835"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "PCB与电子材料",
+      "text": "$生益科技(SH600183)$",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,600183,1802105421.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "眼下大环境就这德性，今又见近期新低，多数个股继续日内上蹿下跳，尤其是近几日，能守",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300394,1802105326.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "我猜要到2400点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802105324.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "美国加关税，20%，明天又要大跌？？？",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129493"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "存储",
+      "text": "我800买的，这辈子，不，下辈子还能回本吗",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,603986,1802105272.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "别跌了，子弹打完了，没钱补仓了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105192.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这里倘若破底翻成立。后面讲很精彩",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802105177.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "三千六百多待涨还有脸红",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087834"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "看这个样子也是跌不动了。应该准备反弹了",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129492"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "有没有↔人一起去上海",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105092.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "上午卖尾盘买，现在都这套路",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105053.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "大涨0.01%明天小跌10%不过分吧",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087833"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "MD说多了都是泪啊，马上11月底了，说好的4300，说好的重回新高，说好的巴厘岛",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "新高",
+      "url": "https://guba.eastmoney.com/news,300308,1802104975.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "3455是月上升趋势的最后一根线。上去活，下来2950点。自己看着办！主力散户。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104900.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "现在还有多少人有信心？我猜3387都将守不住！",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104894.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "预测一下，明天砸三个点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802104887.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "现在高开就会砸盘，你如果割肉，反身又会给一个老乡别走，抗还是割看个人选择了，反正",
+      "direction": -1,
+      "chase": false,
+      "panic": true,
+      "novice": false,
+      "evidence": "割肉、割肉",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104764.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "高开低走，低开低走，平开低走，哈哈，厉害",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104692.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "你这样，你直接给个账号，所有散户直接给你转账就得了，别每天按时扣费",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087831"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "欧洲三傻开始集体拉升",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802104674.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "明天大涨0.02",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087830"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "美股停盘一天，咱们明天会收一根大阳线吗，回点血",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104616.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "$中际旭创(SZ300308)$",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802104590.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "PCB与电子材料",
+      "text": "生益科技短期目标价80，中期目标价200，",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,600183,1802104491.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "会不会太ex了点，竞价拉红",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104339.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "国产算力",
+      "text": "六连阴了，不信明天你还绿",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,688041,1802104275.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "明天大涨，今天看见破万了，加仓",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨、加仓",
+      "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154737"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这指数拉的有意思，一来一回个股跌了两个点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802104089.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "每天收盘第一件事，攀比看谁亏的少。哈哈",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104054.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "//@股友x78712C075:景旺电子怎么才涨这么点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802104050.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "大涨0.01%，可笑啊。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087828"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "今天弄上新闻联播吗？微红",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087827"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "明天继续暴跌",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "暴跌",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087825"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "如何做到的？我们的金融市强国呢？不说老美日韩，看看欧洲哪些国家，乱成那个样子还能大涨，太苦了",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087824"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "12月份，创业板，估计涨到2600点左右，就反弹结束，开始大跌。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129491"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "这回购没看懂",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802103817.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "太侮辱人了，最后一分钟拉红指数",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103810.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "尾盘的精准拉红为了明天的更好下跌",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "下跌",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103743.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "存储",
+      "text": "尊敬的投资者，您好！公司在企业级和AI新兴端侧领域已完成实质性布局并取得突破：在",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,688525,1802103695.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "各大资金机构，一定要珍惜明天开始大盘强势反弹的技术需求。争取把这次反弹变成反转！",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反转、反弹",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103507.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "易中天已经从最低价上来了百分之二，三十，开始构筑底部，还有资金疯狂做空创业板指数",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802103426.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "预测下周下探3400。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103395.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "3476.883476又拜拜了！明早直接低开下沙结束了。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103389.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "下礼拜一保证金比例就下调了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103332.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "今天红了0.01，明天又可以新低了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087821"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "我只想弱弱的问一句，做空能找钱吗？如果能，那是谁在做空？为什么散户不能直接参与做",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802103275.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "凹洲三傻太强了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103225.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "就问你涨没涨吧",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087820"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "最后一笔收红了   假  象      26---175",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103199.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "A股的牛市从来不是莫名其妙就来的，而是带有它的目的：2007年：工行，建行，中石",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "牛市",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103190.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "天天看外围涨",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103160.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "今晚上10点半再看，就你绿油油",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103126.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "存储",
+      "text": "赵姨啊今晚/明天就不要看美国丈夫脸色了，明天你好好浪一浪嘛",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,603986,1802103124.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "57分绿10个点，集合竞价拉银行、上证50，收盘红了，牛啊，就显着你了呗",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103046.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "今晚上10点半再看，就你自己绿油油",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103033.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "全球恐慌，大A逆流直上，大盘暴涨0.01",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103021.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "美国太空探索科技公司（SpaceX）首席执行官马斯克在社媒平台X发文说，美国每名",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103000.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "投资不是死拿该止盈就得止盈。现在亏钱只能说贪婪。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129488"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "无消息面驱动，平盘报收，无聊",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087818"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "0.1%，算的真好",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102909.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "不容易，使出洪荒之力终于收红。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102898.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这市场只能炒小炒杂，彻彻底底的",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102879.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "李胖子说反弹没有多少空间",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300394,1802102870.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "百万账户满仓迎暴跌的第236个交易日",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "暴跌",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802102811.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "李胖子说反弹没多少空间",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300308,1802102815.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "你胖子开始看空了",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "看空",
+      "url": "https://guba.eastmoney.com/news,300308,1802102751.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "明天又是长阴",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102677.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "高盛在上调半导体评级的同时下调了科技硬件评级。半导体板块与国内AI需求联系更紧，",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802102670.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "前些日子，小编忽悠你们高位接盘。十年后这个票是多少钱？董事长都早早减持套现了。你",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802102626.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "下个星期3300叫，月底3200！明年一季度3000！",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087817"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "退多少上市公司就发型多少新股！长期亏损的垃圾股必须重组或者退（要赔偿），要让圈钱",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102604.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "明天跳空高开，岛形反转。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反转",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102554.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "做好3000点保卫战!",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102555.html"
+    },
     {
       "date": "2026-11-26",
       "platform": "sina",
@@ -1976,6 +2983,18 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
+      "text": "这些经济体的月线看起来涨的太漂亮了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802102337.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
       "text": "银行还没加速，继续保持",
       "direction": 0,
       "chase": false,
@@ -2251,18 +3270,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "永远都是反弹，反弹不走，接着跌，慢慢熊途",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "反弹",
-      "url": "https://guba.eastmoney.com/news,300308,1802101202.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "PCB与电子材料",
       "text": "生益科技业绩优秀继续大涨目标200-300元",
       "direction": 1,
@@ -2271,6 +3278,18 @@
       "novice": false,
       "evidence": "大涨",
       "url": "https://guba.eastmoney.com/news,600183,1802101198.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "永远都是反弹，反弹不走，接着跌，慢慢熊途",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300308,1802101202.html"
     },
     {
       "date": "2026-11-26",
@@ -2346,18 +3365,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "$中际旭创(SZ300308)$",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802100952.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
       "text": "你得服，不服不行",
@@ -2379,18 +3386,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssh000001,1802100862.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "任何唱空中国经济的人都会落空",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087806"
     },
     {
       "date": "2026-11-26",
@@ -2995,18 +3990,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "尾盘拉升，非奸即盗明天砸盘",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300394,1802099157.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "大盘",
       "text": "不到3250点坚决不进。",
       "direction": 0,
@@ -3063,18 +4046,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssh000001,1802099070.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "游资活跃了，还是不要买机构票，做游资靠谱，乱世做游资",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802098925.html"
     },
     {
       "date": "2026-11-26",
@@ -3159,6 +4130,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sh688041"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "存储",
+      "text": "金额最多：海光信息（439.11亿元）、 兆易创新 （177.87亿元）、中科曙光（55.5",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh603986"
     },
     {
       "date": "2026-11-26",
@@ -3548,6 +4531,18 @@
       "date": "2026-11-26",
       "platform": "taoguba",
       "topic": "国产算力",
+      "text": "数，前十大权重股包括澜起科技、海光信息、 寒武纪 、佰维存储、芯原股份等，为投资者一揽子布",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688256"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "国产算力",
       "text": "芯片设计指数，前十大权重股包括澜起科技、 海光信息 、寒武纪、佰维存储、芯原股份等，为投资者",
       "direction": 0,
       "chase": false,
@@ -3555,6 +4550,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sh688041"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "存储",
+      "text": "大权重股包括澜起科技、海光信息、寒武纪、 佰维存储 、芯原股份等，为投资者一揽子布局科创板芯",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688525"
     },
     {
       "date": "2026-11-26",
@@ -3567,18 +4574,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129474"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "明天又要到周末止跌企稳了，会给个大礼包么？我好怕啊",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802097282.html"
     },
     {
       "date": "2026-11-26",
@@ -3627,6 +4622,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087777"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "国产算力",
+      "text": "。如果开盘后长鑫科技继续往下走，同题材的 寒武纪 、中芯国际、盛合晶微也没一个跟，那我就认",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688256"
     },
     {
       "date": "2026-11-26",
@@ -3722,19 +4729,7 @@
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802096919.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "把3400也破了吧！反正股票也不涨",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096872.html"
+      "url": "https://guba.eastmoney.com/news,300394,1802096919.html"
     },
     {
       "date": "2026-11-26",
@@ -3763,30 +4758,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "现在买票涨跌全凭运气，太难了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096722.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "这个点数收的秒",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096703.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "光通信",
       "text": "据说中国人寿买你家股票，亏了30个亿割肉了？",
       "direction": -1,
@@ -3795,18 +4766,6 @@
       "novice": false,
       "evidence": "割肉、割肉",
       "url": "https://guba.eastmoney.com/news,300308,1802096653.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "地产应该是大地了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096586.html"
     },
     {
       "date": "2026-11-26",
@@ -3846,18 +4805,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "蹦哒不了几天了，6号老美开始23小时交易",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096458.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "taoguba",
       "topic": "光通信",
       "text": "团队的成色与效率。榜单上显示，6G概念中 中际旭创 研发人数居首，各家的人数规模在图上那张表",
@@ -3867,18 +4814,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "每天收盘直接手写指数",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096344.html"
     },
     {
       "date": "2026-11-26",
@@ -3915,18 +4850,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129472"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "科技得跌到哪啊，抄个底两天跌10几点，什么玩意啊",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096251.html"
     },
     {
       "date": "2026-11-26",
@@ -3999,18 +4922,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssz399006,1802096011.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "今天涨了，明天，，，，，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095951.html"
     },
     {
       "date": "2026-11-26",
@@ -4087,30 +4998,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "每一句正向的话语，都是一份显化的力量。中国移动扎根赛道，持续向好，稳步前行，静待",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095419.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "事到如今，最对不起的就是家人",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095329.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "存储",
       "text": "融资余额太高，杀到五六十亿的融资余额就差不多了",
       "direction": 0,
@@ -4119,18 +5006,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,603986,1802095310.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "打铁还需自身硬，无须扬鞭自奋蹄。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095306.html"
     },
     {
       "date": "2026-11-26",
@@ -4158,18 +5033,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "今天收了个大阳，明天很关键",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095146.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
       "text": "暴涨0.1[允悲]",
@@ -4179,66 +5042,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087768"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "这个红太刺眼了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087767"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "这个88收的好啊，双重意思，自己理解！！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087766"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "每天看着都流泪！后悔啊！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087764"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "真完犊子！跳水又拉回！次次这么干！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087763"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "止损，没有回头路",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094883.html"
     },
     {
       "date": "2026-11-26",
@@ -4280,18 +5083,6 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "天干丁火，地支未土，丁未一柱。未为燥土，土能藏金，亦能生金；丁火在上，不是熔金，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094690.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
       "text": "还差一点点腰斩，就是不腰斩。",
       "direction": 0,
       "chase": false,
@@ -4311,30 +5102,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802094546.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "永远不忘来时路",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087759"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "要死了跳楼都救不了了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087758"
     },
     {
       "date": "2026-11-26",
@@ -4363,18 +5130,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "怎么今天银行都带不动你了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094350.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "PCB与电子材料",
       "text": "覆铜板赶紧提价，你不提巨石电子布要提了。",
       "direction": 0,
@@ -4383,30 +5138,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,600183,1802094299.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大A终于红了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094146.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "我在gta6里开车就这么走直线的",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094120.html"
     },
     {
       "date": "2026-11-26",
@@ -4435,30 +5166,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "贸易战又开始",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094035.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "$生益科技(SH600183)$",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,600183,1802093996.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "存储",
       "text": "易中天尤其天孚通信本周四天大阳暴涨，已从底部走出来了，要是明天天赋明天一根大阳，",
       "direction": 0,
@@ -4467,18 +5174,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,688525,1802093955.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "哈哈，这个0.01还是有点实力的wb-3-12",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087756"
     },
     {
       "date": "2026-11-26",
@@ -4495,18 +5190,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "------这回跌得发不出新股了------------------------",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093909.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "光通信",
       "text": "明天希望能补跌20个点，谢谢",
       "direction": 0,
@@ -4515,30 +5198,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802093882.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "展示肌肉，精准红0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093877.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大利好爆拉0.01牛市来了",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "牛市",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093863.html"
     },
     {
       "date": "2026-11-26",
@@ -4587,18 +5246,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154735"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "坚决等3300",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093758.html"
     },
     {
       "date": "2026-11-26",
@@ -4652,30 +5299,6 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "尾盘拉升，预感明天要大跌了，希望破个3400就行了，要求不高",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093362.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "大涨wb-1-3",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "大涨",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087754"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
       "text": "年底基金要排名，不会有行情了",
       "direction": 0,
       "chase": false,
@@ -4698,30 +5321,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "国家队控盘牛逼0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087750"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "没有股息。就没有时间换空间。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802092937.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "光通信",
       "text": "$天孚通信(SZ300394)$",
@@ -4731,30 +5330,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300394,1802092909.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "微调2个爆涨0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087749"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "买了辆仰望，自燃，人没事就好，我这样开导自己",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092845.html"
     },
     {
       "date": "2026-11-26",
@@ -4779,18 +5354,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssz399001,1802092642.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "G了，下周是不是要到1万亿了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092586.html"
     },
     {
       "date": "2026-11-26",
@@ -4839,18 +5402,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802092187.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "1，建议三年不发新股，急于上市的公司可以重组借壳上市！2，公司回购必须注销3，新",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092120.html"
     },
     {
       "date": "2026-11-26",
@@ -5055,477 +5606,933 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sz300308"
-    },
+    }
+  ],
+  "intraday_posts": [
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "什么时候见底啊？",
+      "topic": "光通信",
+      "text": "成品都禁止了，何况原材料",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802089837.html"
+      "url": "https://guba.eastmoney.com/news,300308,1802105546.html"
     },
     {
       "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
-      "text": "昨天老美负四拉起来，费城半导体负9拉的快红了，而我们天天表演高开低走",
+      "text": "逐渐给股民养成了下午2点半买入，次日开盘卖出做T的习惯",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129458"
+      "evidence": "买入、卖出",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087836"
     },
     {
       "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
-      "text": "久违的深v，不知道什么时候能反弹上涨",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "上涨、反弹",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129456"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "恩哥坚定看好1200的光模块，400的中际风险还是很大",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "看好",
-      "url": "https://guba.eastmoney.com/news,300308,1802089571.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "比宁德时代良心多了，起码真心回购维护股价，不像宁德时代用几百亿回购注销来骗散户进",
+      "text": "券商都跌多久了，券商不涨，大盘还会再创新低！",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802089551.html"
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087835"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "昨天参加了股东会，有幸和董事长董秘一起交流，持有二年多了，对公司也有感情了。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802089230.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "8000点等你",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802088914.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大盘三个指数已经处于神奇九转的第十转，今天缩量止跌。且大盘指数已经触及布林线下轨",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802088767.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "三分之二的绿盘你指数是红的",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802088714.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "不消费了，省吃俭用。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129451"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
       "topic": "PCB与电子材料",
-      "text": "是（如图1所示）中际旭创（36.27%） 沪电股份 （25.29%）工业富联（21.16%）",
+      "text": "$生益科技(SH600183)$",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz002463"
+      "url": "https://guba.eastmoney.com/news,600183,1802105421.html"
     },
     {
       "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "PCB与电子材料",
-      "text": "（25.29%）工业富联（21.16%） 生益科技 （19.94%）立讯精密（19.55%）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sh600183"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
+      "platform": "eastmoney",
       "topic": "光通信",
-      "text": "力。一、最新ROE前列的是（如图1所示） 中际旭创 （36.27%）沪电股份（25.29%）",
+      "text": "眼下大环境就这德性，今又见近期新低，多数个股继续日内上蹿下跳，尤其是近几日，能守",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
+      "url": "https://guba.eastmoney.com/news,300394,1802105326.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "我猜要到2400点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802105324.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "美国加关税，20%，明天又要大跌？？？",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129493"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "存储",
-      "text": "晶澳科技就是科技的下场，从58到5元，还在下跌",
+      "text": "我800买的，这辈子，不，下辈子还能回本吗",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,603986,1802105272.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "别跌了，子弹打完了，没钱补仓了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105192.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这里倘若破底翻成立。后面讲很精彩",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802105177.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "三千六百多待涨还有脸红",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087834"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "看这个样子也是跌不动了。应该准备反弹了",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129492"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "有没有↔人一起去上海",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105092.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "上午卖尾盘买，现在都这套路",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802105053.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "大涨0.01%明天小跌10%不过分吧",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087833"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "MD说多了都是泪啊，马上11月底了，说好的4300，说好的重回新高，说好的巴厘岛",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "新高",
+      "url": "https://guba.eastmoney.com/news,300308,1802104975.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "3455是月上升趋势的最后一根线。上去活，下来2950点。自己看着办！主力散户。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104900.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "现在还有多少人有信心？我猜3387都将守不住！",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104894.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "预测一下，明天砸三个点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802104887.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "现在高开就会砸盘，你如果割肉，反身又会给一个老乡别走，抗还是割看个人选择了，反正",
       "direction": -1,
       "chase": false,
+      "panic": true,
+      "novice": false,
+      "evidence": "割肉、割肉",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104764.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "高开低走，低开低走，平开低走，哈哈，厉害",
+      "direction": 0,
+      "chase": false,
       "panic": false,
       "novice": false,
-      "evidence": "下跌",
-      "url": "https://guba.eastmoney.com/news,603986,1802088131.html"
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104692.html"
     },
     {
       "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
-      "text": "全球市场这么好的局面就来了个这",
+      "text": "你这样，你直接给个账号，所有散户直接给你转账就得了，别每天按时扣费",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129449"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "比最高少个1",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802087869.html"
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087831"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "为什么他是红的，我是绿的",
+      "text": "欧洲三傻开始集体拉升",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802087845.html"
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802104674.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "明天大涨0.02",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087830"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "美股停盘一天，咱们明天会收一根大阳线吗，回点血",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104616.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "$中际旭创(SZ300308)$",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802104590.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "PCB与电子材料",
-      "text": "谁卖了一万手？主力？",
+      "text": "生益科技短期目标价80，中期目标价200，",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,600183,1802087772.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "存储",
-      "text": "兆阿姨还在创新低啊….",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,603986,1802087740.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "当你了解他操盘靶向目标的时候，你就知道怎么走了，根本不存在例外。就是杀追涨柚子，",
-      "direction": 0,
-      "chase": true,
-      "panic": false,
-      "novice": false,
-      "evidence": "追涨",
-      "url": "https://guba.eastmoney.com/news,300394,1802087702.html"
+      "url": "https://guba.eastmoney.com/news,600183,1802104491.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "我发现个秘密，4380打五折2190",
+      "text": "会不会太ex了点，竞价拉红",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802087442.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "以为今天能回点血，没想到继续扣费！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802087235.html"
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104339.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "国产算力",
-      "text": "国产替代时刻到了：英伟达已要求其制造合作伙伴停止向四个东南亚国家运送服务器…",
+      "text": "六连阴了，不信明天你还绿",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,688256,1802086845.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "捏，虽然麻酱没有证据，只有感觉，但是麻酱感觉创业板指数再跌10%就要到底了呢？",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802086631.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "还有人敢抄底么",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802086173.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "李大胖子开始看空",
-      "direction": -1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "看空",
-      "url": "https://guba.eastmoney.com/news,300394,1802086115.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "主力净流入41.62亿元居申万一级首位， 中际旭创 单只吸金13.42亿元居两市第一——距1",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "三年后跌破10元。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802085738.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "存储",
-      "text": "我还在等抄底现在还是太贵了",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "抄底",
-      "url": "https://guba.eastmoney.com/news,603986,1802085444.html"
+      "url": "https://guba.eastmoney.com/news,688041,1802104275.html"
     },
     {
       "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
-      "text": "狗都不买的东西你们抢着买，都去买美股不好吗？美股20年牛市，A股10年前是这个价，现在还是这个价。666扣一波",
+      "text": "明天大涨，今天看见破万了，加仓",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨、加仓",
+      "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154737"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这指数拉的有意思，一来一回个股跌了两个点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802104089.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "每天收盘第一件事，攀比看谁亏的少。哈哈",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802104054.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "//@股友x78712C075:景旺电子怎么才涨这么点",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802104050.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "大涨0.01%，可笑啊。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087828"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "今天弄上新闻联播吗？微红",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087827"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "明天继续暴跌",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "暴跌",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087825"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "如何做到的？我们的金融市强国呢？不说老美日韩，看看欧洲哪些国家，乱成那个样子还能大涨，太苦了",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "大涨",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087824"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "12月份，创业板，估计涨到2600点左右，就反弹结束，开始大跌。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129491"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "这回购没看懂",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802103817.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "太侮辱人了，最后一分钟拉红指数",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103810.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "尾盘的精准拉红为了明天的更好下跌",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "下跌",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103743.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "存储",
+      "text": "尊敬的投资者，您好！公司在企业级和AI新兴端侧领域已完成实质性布局并取得突破：在",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,688525,1802103695.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "各大资金机构，一定要珍惜明天开始大盘强势反弹的技术需求。争取把这次反弹变成反转！",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反转、反弹",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103507.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "易中天已经从最低价上来了百分之二，三十，开始构筑底部，还有资金疯狂做空创业板指数",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802103426.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "预测下周下探3400。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103395.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "3476.883476又拜拜了！明早直接低开下沙结束了。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103389.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "下礼拜一保证金比例就下调了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103332.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "今天红了0.01，明天又可以新低了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087821"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "我只想弱弱的问一句，做空能找钱吗？如果能，那是谁在做空？为什么散户不能直接参与做",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802103275.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "凹洲三傻太强了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103225.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "就问你涨没涨吧",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087820"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "最后一笔收红了   假  象      26---175",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103199.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "A股的牛市从来不是莫名其妙就来的，而是带有它的目的：2007年：工行，建行，中石",
       "direction": 1,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "牛市",
-      "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154733"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "中京电子（9.46异动）/东山精密，中军 中际旭创 /新易盛/天孚通信；国产芯片（科创50）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "异动）/东山精密，中军中际旭创/新易盛/ 天孚通信 ；国产芯片（科创50）：华虹宏力/寒武纪",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300394"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "PCB与电子材料",
-      "text": "，是持仓里最磨人的；没量没情绪，只能等。 沪电股份 002463：今天争了口气，PCB一强，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz002463"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "封顶撒花祝福",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,002463,1802084331.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "存储太可怜了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802084326.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "直到200元",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802084243.html"
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103190.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "10万块跌倒3万，请问如何保护中小投资者",
+      "text": "天天看外围涨",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802084200.html"
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103160.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "亏10%走的那一批人都是聪明人。剩下的人基本亏30%了",
+      "text": "今晚上10点半再看，就你绿油油",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802083992.html"
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103126.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "存储",
+      "text": "赵姨啊今晚/明天就不要看美国丈夫脸色了，明天你好好浪一浪嘛",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,603986,1802103124.html"
     },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "天天除了易中天还是易中天",
+      "text": "57分绿10个点，集合竞价拉银行、上证50，收盘红了，牛啊，就显着你了呗",
       "direction": 0,
       "chase": false,
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802083883.html"
-    }
-  ],
-  "intraday_posts": [
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103046.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "今晚上10点半再看，就你自己绿油油",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802103033.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "全球恐慌，大A逆流直上，大盘暴涨0.01",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103021.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "美国太空探索科技公司（SpaceX）首席执行官马斯克在社媒平台X发文说，美国每名",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802103000.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "投资不是死拿该止盈就得止盈。现在亏钱只能说贪婪。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129488"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "无消息面驱动，平盘报收，无聊",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087818"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "0.1%，算的真好",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102909.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "不容易，使出洪荒之力终于收红。",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102898.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "这市场只能炒小炒杂，彻彻底底的",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102879.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "李胖子说反弹没有多少空间",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300394,1802102870.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "百万账户满仓迎暴跌的第236个交易日",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "暴跌",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802102811.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "李胖子说反弹没多少空间",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300308,1802102815.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "你胖子开始看空了",
+      "direction": -1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "看空",
+      "url": "https://guba.eastmoney.com/news,300308,1802102751.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "明天又是长阴",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102677.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "高盛在上调半导体评级的同时下调了科技硬件评级。半导体板块与国内AI需求联系更紧，",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399006,1802102670.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "前些日子，小编忽悠你们高位接盘。十年后这个票是多少钱？董事长都早早减持套现了。你",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,300308,1802102626.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "下个星期3300叫，月底3200！明年一季度3000！",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087817"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "退多少上市公司就发型多少新股！长期亏损的垃圾股必须重组或者退（要赔偿），要让圈钱",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102604.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "明天跳空高开，岛形反转。",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反转",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102554.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
+      "text": "做好3000点保卫战!",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssh000001,1802102555.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "sina",
+      "topic": "大盘",
+      "text": "现在什么基本面，什么K线走势，盈亏，就是一个跌，五年之后再来看，机构也套，散户更套，",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087816"
+    },
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
@@ -5566,6 +6573,18 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
+      "text": "这些经济体的月线看起来涨的太漂亮了",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://guba.eastmoney.com/news,zssz399001,1802102337.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "大盘",
       "text": "银行还没加速，继续保持",
       "direction": 0,
       "chase": false,
@@ -5841,18 +6860,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "永远都是反弹，反弹不走，接着跌，慢慢熊途",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "反弹",
-      "url": "https://guba.eastmoney.com/news,300308,1802101202.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "PCB与电子材料",
       "text": "生益科技业绩优秀继续大涨目标200-300元",
       "direction": 1,
@@ -5861,6 +6868,18 @@
       "novice": false,
       "evidence": "大涨",
       "url": "https://guba.eastmoney.com/news,600183,1802101198.html"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "eastmoney",
+      "topic": "光通信",
+      "text": "永远都是反弹，反弹不走，接着跌，慢慢熊途",
+      "direction": 1,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "反弹",
+      "url": "https://guba.eastmoney.com/news,300308,1802101202.html"
     },
     {
       "date": "2026-11-26",
@@ -5936,18 +6955,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "$中际旭创(SZ300308)$",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802100952.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
       "text": "你得服，不服不行",
@@ -5969,18 +6976,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssh000001,1802100862.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "任何唱空中国经济的人都会落空",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087806"
     },
     {
       "date": "2026-11-26",
@@ -6585,18 +7580,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "尾盘拉升，非奸即盗明天砸盘",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300394,1802099157.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "大盘",
       "text": "不到3250点坚决不进。",
       "direction": 0,
@@ -6653,18 +7636,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssh000001,1802099070.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "游资活跃了，还是不要买机构票，做游资靠谱，乱世做游资",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802098925.html"
     },
     {
       "date": "2026-11-26",
@@ -6749,6 +7720,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sh688041"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "存储",
+      "text": "金额最多：海光信息（439.11亿元）、 兆易创新 （177.87亿元）、中科曙光（55.5",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh603986"
     },
     {
       "date": "2026-11-26",
@@ -7138,6 +8121,18 @@
       "date": "2026-11-26",
       "platform": "taoguba",
       "topic": "国产算力",
+      "text": "数，前十大权重股包括澜起科技、海光信息、 寒武纪 、佰维存储、芯原股份等，为投资者一揽子布",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688256"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "国产算力",
       "text": "芯片设计指数，前十大权重股包括澜起科技、 海光信息 、寒武纪、佰维存储、芯原股份等，为投资者",
       "direction": 0,
       "chase": false,
@@ -7145,6 +8140,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sh688041"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "存储",
+      "text": "大权重股包括澜起科技、海光信息、寒武纪、 佰维存储 、芯原股份等，为投资者一揽子布局科创板芯",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688525"
     },
     {
       "date": "2026-11-26",
@@ -7157,18 +8164,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129474"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "明天又要到周末止跌企稳了，会给个大礼包么？我好怕啊",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802097282.html"
     },
     {
       "date": "2026-11-26",
@@ -7217,6 +8212,18 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087777"
+    },
+    {
+      "date": "2026-11-26",
+      "platform": "taoguba",
+      "topic": "国产算力",
+      "text": "。如果开盘后长鑫科技继续往下走，同题材的 寒武纪 、中芯国际、盛合晶微也没一个跟，那我就认",
+      "direction": 0,
+      "chase": false,
+      "panic": false,
+      "novice": false,
+      "evidence": "",
+      "url": "https://www.tgb.cn/quotes/sh688256"
     },
     {
       "date": "2026-11-26",
@@ -7312,19 +8319,7 @@
       "panic": false,
       "novice": false,
       "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802096919.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "把3400也破了吧！反正股票也不涨",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096872.html"
+      "url": "https://guba.eastmoney.com/news,300394,1802096919.html"
     },
     {
       "date": "2026-11-26",
@@ -7353,30 +8348,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "现在买票涨跌全凭运气，太难了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096722.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "这个点数收的秒",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096703.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "光通信",
       "text": "据说中国人寿买你家股票，亏了30个亿割肉了？",
       "direction": -1,
@@ -7385,18 +8356,6 @@
       "novice": false,
       "evidence": "割肉、割肉",
       "url": "https://guba.eastmoney.com/news,300308,1802096653.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "地产应该是大地了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096586.html"
     },
     {
       "date": "2026-11-26",
@@ -7436,18 +8395,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "蹦哒不了几天了，6号老美开始23小时交易",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096458.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "taoguba",
       "topic": "光通信",
       "text": "团队的成色与效率。榜单上显示，6G概念中 中际旭创 研发人数居首，各家的人数规模在图上那张表",
@@ -7457,18 +8404,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "每天收盘直接手写指数",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096344.html"
     },
     {
       "date": "2026-11-26",
@@ -7505,18 +8440,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129472"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "科技得跌到哪啊，抄个底两天跌10几点，什么玩意啊",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802096251.html"
     },
     {
       "date": "2026-11-26",
@@ -7589,18 +8512,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssz399006,1802096011.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "今天涨了，明天，，，，，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095951.html"
     },
     {
       "date": "2026-11-26",
@@ -7677,30 +8588,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "每一句正向的话语，都是一份显化的力量。中国移动扎根赛道，持续向好，稳步前行，静待",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095419.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "事到如今，最对不起的就是家人",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095329.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "存储",
       "text": "融资余额太高，杀到五六十亿的融资余额就差不多了",
       "direction": 0,
@@ -7709,18 +8596,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,603986,1802095310.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "打铁还需自身硬，无须扬鞭自奋蹄。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095306.html"
     },
     {
       "date": "2026-11-26",
@@ -7748,18 +8623,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "今天收了个大阳，明天很关键",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802095146.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "sina",
       "topic": "大盘",
       "text": "暴涨0.1[允悲]",
@@ -7769,66 +8632,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087768"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "这个红太刺眼了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087767"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "这个88收的好啊，双重意思，自己理解！！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087766"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "每天看着都流泪！后悔啊！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087764"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "真完犊子！跳水又拉回！次次这么干！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087763"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "止损，没有回头路",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094883.html"
     },
     {
       "date": "2026-11-26",
@@ -7870,18 +8673,6 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "天干丁火，地支未土，丁未一柱。未为燥土，土能藏金，亦能生金；丁火在上，不是熔金，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094690.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
       "text": "还差一点点腰斩，就是不腰斩。",
       "direction": 0,
       "chase": false,
@@ -7901,30 +8692,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802094546.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "永远不忘来时路",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087759"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "要死了跳楼都救不了了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087758"
     },
     {
       "date": "2026-11-26",
@@ -7953,18 +8720,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "怎么今天银行都带不动你了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094350.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "PCB与电子材料",
       "text": "覆铜板赶紧提价，你不提巨石电子布要提了。",
       "direction": 0,
@@ -7973,30 +8728,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,600183,1802094299.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大A终于红了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094146.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "我在gta6里开车就这么走直线的",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094120.html"
     },
     {
       "date": "2026-11-26",
@@ -8025,30 +8756,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "贸易战又开始",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802094035.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "$生益科技(SH600183)$",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,600183,1802093996.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "存储",
       "text": "易中天尤其天孚通信本周四天大阳暴涨，已从底部走出来了，要是明天天赋明天一根大阳，",
       "direction": 0,
@@ -8057,18 +8764,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,688525,1802093955.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "哈哈，这个0.01还是有点实力的wb-3-12",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087756"
     },
     {
       "date": "2026-11-26",
@@ -8085,18 +8780,6 @@
     {
       "date": "2026-11-26",
       "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "------这回跌得发不出新股了------------------------",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093909.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
       "topic": "光通信",
       "text": "明天希望能补跌20个点，谢谢",
       "direction": 0,
@@ -8105,30 +8788,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802093882.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "展示肌肉，精准红0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093877.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大利好爆拉0.01牛市来了",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "牛市",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093863.html"
     },
     {
       "date": "2026-11-26",
@@ -8177,18 +8836,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154735"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "坚决等3300",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093758.html"
     },
     {
       "date": "2026-11-26",
@@ -8242,30 +8889,6 @@
       "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "大盘",
-      "text": "尾盘拉升，预感明天要大跌了，希望破个3400就行了，要求不高",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802093362.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "大涨wb-1-3",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "大涨",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087754"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
       "text": "年底基金要排名，不会有行情了",
       "direction": 0,
       "chase": false,
@@ -8288,30 +8911,6 @@
     },
     {
       "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "国家队控盘牛逼0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087750"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "没有股息。就没有时间换空间。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802092937.html"
-    },
-    {
-      "date": "2026-11-26",
       "platform": "eastmoney",
       "topic": "光通信",
       "text": "$天孚通信(SZ300394)$",
@@ -8321,30 +8920,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300394,1802092909.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "微调2个爆涨0.01",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9279&tid=6087749"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "买了辆仰望，自燃，人没事就好，我这样开导自己",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092845.html"
     },
     {
       "date": "2026-11-26",
@@ -8369,18 +8944,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssz399001,1802092642.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "G了，下周是不是要到1万亿了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092586.html"
     },
     {
       "date": "2026-11-26",
@@ -8429,18 +8992,6 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,300308,1802092187.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "1，建议三年不发新股，急于上市的公司可以重组借壳上市！2，公司回购必须注销3，新",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssh000001,1802092120.html"
     },
     {
       "date": "2026-11-26",
@@ -8657,480 +9208,12 @@
       "novice": false,
       "evidence": "",
       "url": "https://guba.eastmoney.com/news,zssz399006,1802089837.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "昨天老美负四拉起来，费城半导体负9拉的快红了，而我们天天表演高开低走",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129458"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "久违的深v，不知道什么时候能反弹上涨",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "上涨、反弹",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129456"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "恩哥坚定看好1200的光模块，400的中际风险还是很大",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "看好",
-      "url": "https://guba.eastmoney.com/news,300308,1802089571.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "比宁德时代良心多了，起码真心回购维护股价，不像宁德时代用几百亿回购注销来骗散户进",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802089551.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "昨天参加了股东会，有幸和董事长董秘一起交流，持有二年多了，对公司也有感情了。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802089230.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "8000点等你",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802088914.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "大盘三个指数已经处于神奇九转的第十转，今天缩量止跌。且大盘指数已经触及布林线下轨",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802088767.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "三分之二的绿盘你指数是红的",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802088714.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "不消费了，省吃俭用。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129451"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "PCB与电子材料",
-      "text": "是（如图1所示）中际旭创（36.27%） 沪电股份 （25.29%）工业富联（21.16%）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz002463"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "PCB与电子材料",
-      "text": "（25.29%）工业富联（21.16%） 生益科技 （19.94%）立讯精密（19.55%）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sh600183"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "力。一、最新ROE前列的是（如图1所示） 中际旭创 （36.27%）沪电股份（25.29%）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "存储",
-      "text": "晶澳科技就是科技的下场，从58到5元，还在下跌",
-      "direction": -1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "下跌",
-      "url": "https://guba.eastmoney.com/news,603986,1802088131.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "全球市场这么好的局面就来了个这",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.sina.cn/?s=thread&bid=9394&tid=1129449"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "比最高少个1",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802087869.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "为什么他是红的，我是绿的",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802087845.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "谁卖了一万手？主力？",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,600183,1802087772.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "存储",
-      "text": "兆阿姨还在创新低啊….",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,603986,1802087740.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "当你了解他操盘靶向目标的时候，你就知道怎么走了，根本不存在例外。就是杀追涨柚子，",
-      "direction": 0,
-      "chase": true,
-      "panic": false,
-      "novice": false,
-      "evidence": "追涨",
-      "url": "https://guba.eastmoney.com/news,300394,1802087702.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "我发现个秘密，4380打五折2190",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802087442.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "以为今天能回点血，没想到继续扣费！",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802087235.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "国产算力",
-      "text": "国产替代时刻到了：英伟达已要求其制造合作伙伴停止向四个东南亚国家运送服务器…",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,688256,1802086845.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "捏，虽然麻酱没有证据，只有感觉，但是麻酱感觉创业板指数再跌10%就要到底了呢？",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802086631.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "还有人敢抄底么",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802086173.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "李大胖子开始看空",
-      "direction": -1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "看空",
-      "url": "https://guba.eastmoney.com/news,300394,1802086115.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "主力净流入41.62亿元居申万一级首位， 中际旭创 单只吸金13.42亿元居两市第一——距1",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "三年后跌破10元。",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802085738.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "存储",
-      "text": "我还在等抄底现在还是太贵了",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "抄底",
-      "url": "https://guba.eastmoney.com/news,603986,1802085444.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "sina",
-      "topic": "大盘",
-      "text": "狗都不买的东西你们抢着买，都去买美股不好吗？美股20年牛市，A股10年前是这个价，现在还是这个价。666扣一波",
-      "direction": 1,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "牛市",
-      "url": "https://guba.sina.cn/?s=thread&bid=9282&tid=154733"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "中京电子（9.46异动）/东山精密，中军 中际旭创 /新易盛/天孚通信；国产芯片（科创50）",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300308"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "光通信",
-      "text": "异动）/东山精密，中军中际旭创/新易盛/ 天孚通信 ；国产芯片（科创50）：华虹宏力/寒武纪",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz300394"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "taoguba",
-      "topic": "PCB与电子材料",
-      "text": "，是持仓里最磨人的；没量没情绪，只能等。 沪电股份 002463：今天争了口气，PCB一强，",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://www.tgb.cn/quotes/sz002463"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "封顶撒花祝福",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,002463,1802084331.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "存储太可怜了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802084326.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "光通信",
-      "text": "直到200元",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,300308,1802084243.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "10万块跌倒3万，请问如何保护中小投资者",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802084200.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "亏10%走的那一批人都是聪明人。剩下的人基本亏30%了",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399006,1802083992.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "大盘",
-      "text": "天天除了易中天还是易中天",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,zssz399001,1802083883.html"
-    },
-    {
-      "date": "2026-11-26",
-      "platform": "eastmoney",
-      "topic": "PCB与电子材料",
-      "text": "又开始了，真是记吃不记打",
-      "direction": 0,
-      "chase": false,
-      "panic": false,
-      "novice": false,
-      "evidence": "",
-      "url": "https://guba.eastmoney.com/news,600183,1802083868.html"
     }
   ],
   "update": {
     "ok": true,
-    "attempted_at": "2026-11-26T16:58:22.676378+08:00",
-    "message": "采集完成；是否发布综合分取决于覆盖门槛"
+    "attempted_at": "2026-11-26T17:11:31.639651+08:00",
+    "message": "采集完成；三维独立展示，不合成情绪总分"
   },
   "schedule": "独立任务：北京时间工作日09:00—15:30每30分钟云端采集，16:15补充收盘快照；GitHub排队可能延迟。页面刷新仅重读已发布快照。",
   "assessment": {
@@ -9148,88 +9231,5 @@
       "按平台披露覆盖与缺失，不按情绪结论选样"
     ],
     "note": "下列多空和恐慌命中只供审阅；多空方向不等于情绪，未命中不等于中性。"
-  },
-  "panels": {
-    "schema_version": 1,
-    "asof": "2026-11-26",
-    "total_score": null,
-    "market": {
-      "benchmarks": [
-        {
-          "name": "上证指数",
-          "status": "行情可用",
-          "date": "2026-11-26",
-          "close": 3476.88,
-          "return5_pct": -2.8158384624415,
-          "drawdown20_pct": -5.773311544184001,
-          "rv20_annual_pct": 14.837084429119216,
-          "rv_percentile": 67.0886075949367,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
-          "rv_baseline_end": "2026-11-25"
-        },
-        {
-          "name": "沪深300",
-          "status": "行情可用",
-          "date": "2026-11-26",
-          "close": 3900.55,
-          "return5_pct": -2.1152668614047188,
-          "drawdown20_pct": -5.174781993528477,
-          "rv20_annual_pct": 14.060497783424172,
-          "rv_percentile": 29.11392405063291,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
-          "rv_baseline_end": "2026-11-25"
-        },
-        {
-          "name": "创业板指",
-          "status": "行情可用",
-          "date": "2026-11-26",
-          "close": 2189.82,
-          "return5_pct": -4.5139403664524185,
-          "drawdown20_pct": -14.86157064154553,
-          "rv20_annual_pct": 47.0712930139779,
-          "rv_percentile": 59.49367088607595,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
-          "rv_baseline_end": "2026-11-25"
-        }
-      ],
-      "source": "腾讯指数日线",
-      "source_url": "https://web.ifzq.gtimg.cn/",
-      "definition": "20日对数收益样本标准差×√252；分位只对当前可用历史计算，至少60个既往有效观测，排除当日。已实现波动不是期权隐含波动，也不是VIX。",
-      "missing": [
-        "全市场涨跌广度",
-        "期权隐含波动率与Put/Call比",
-        "期货基差"
-      ]
-    },
-    "community": {
-      "status": "暂停评分",
-      "reason": "语义分类与跨平台代表性尚未验证；样本数、命中数与情绪强度分开。",
-      "total_score": null
-    },
-    "leverage": {
-      "date": "2026-11-25",
-      "status": "可用（偿还为推算）",
-      "unit": "亿元",
-      "balance": 21213.86,
-      "net1": -208.13999999999942,
-      "net5": -868.7599999999984,
-      "change5_pct": -3.9341346271411566,
-      "buy": 1038.1,
-      "repay_estimated": 1246.2399999999993,
-      "buy_repay_ratio": 0.8329856207472079,
-      "lag_calendar_days": 1,
-      "source": "同花顺沪深北两融汇总",
-      "source_url": "https://data.10jqka.com.cn/market/rzrq/",
-      "definition": "推算偿还=融资买入−融资余额日变化；余额变化反映未偿本金变化，不直接等于股价下跌。偿还不能区分主动还款与强平。",
-      "methodology_url": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
-      "missing": [
-        "实际强平金额",
-        "账户维持担保比例分布",
-        "场外杠杆规模"
-      ]
-    }
   }
 }
