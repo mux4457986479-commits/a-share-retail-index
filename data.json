@@ -9148,5 +9148,88 @@
       "按平台披露覆盖与缺失，不按情绪结论选样"
     ],
     "note": "下列多空和恐慌命中只供审阅；多空方向不等于情绪，未命中不等于中性。"
+  },
+  "panels": {
+    "schema_version": 1,
+    "asof": "2026-11-26",
+    "total_score": null,
+    "market": {
+      "benchmarks": [
+        {
+          "name": "上证指数",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 3476.88,
+          "return5_pct": -2.8158384624415,
+          "drawdown20_pct": -5.773311544184001,
+          "rv20_annual_pct": 14.837084429119216,
+          "rv_percentile": 67.0886075949367,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        },
+        {
+          "name": "沪深300",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 3900.55,
+          "return5_pct": -2.1152668614047188,
+          "drawdown20_pct": -5.174781993528477,
+          "rv20_annual_pct": 14.060497783424172,
+          "rv_percentile": 29.11392405063291,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        },
+        {
+          "name": "创业板指",
+          "status": "行情可用",
+          "date": "2026-11-26",
+          "close": 2189.82,
+          "return5_pct": -4.5139403664524185,
+          "drawdown20_pct": -14.86157064154553,
+          "rv20_annual_pct": 47.0712930139779,
+          "rv_percentile": 59.49367088607595,
+          "rv_baseline_n": 79,
+          "rv_baseline_start": "2026-07-30",
+          "rv_baseline_end": "2026-11-25"
+        }
+      ],
+      "source": "腾讯指数日线",
+      "source_url": "https://web.ifzq.gtimg.cn/",
+      "definition": "20日对数收益样本标准差×√252；分位只对当前可用历史计算，至少60个既往有效观测，排除当日。已实现波动不是期权隐含波动，也不是VIX。",
+      "missing": [
+        "全市场涨跌广度",
+        "期权隐含波动率与Put/Call比",
+        "期货基差"
+      ]
+    },
+    "community": {
+      "status": "暂停评分",
+      "reason": "语义分类与跨平台代表性尚未验证；样本数、命中数与情绪强度分开。",
+      "total_score": null
+    },
+    "leverage": {
+      "date": "2026-11-25",
+      "status": "可用（偿还为推算）",
+      "unit": "亿元",
+      "balance": 21213.86,
+      "net1": -208.13999999999942,
+      "net5": -868.7599999999984,
+      "change5_pct": -3.9341346271411566,
+      "buy": 1038.1,
+      "repay_estimated": 1246.2399999999993,
+      "buy_repay_ratio": 0.8329856207472079,
+      "lag_calendar_days": 1,
+      "source": "同花顺沪深北两融汇总",
+      "source_url": "https://data.10jqka.com.cn/market/rzrq/",
+      "definition": "推算偿还=融资买入−融资余额日变化；余额变化反映未偿本金变化，不直接等于股价下跌。偿还不能区分主动还款与强平。",
+      "methodology_url": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+      "missing": [
+        "实际强平金额",
+        "账户维持担保比例分布",
+        "场外杠杆规模"
+      ]
+    }
   }
 }

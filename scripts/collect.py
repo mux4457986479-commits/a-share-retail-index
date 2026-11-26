@@ -159,7 +159,7 @@ def main():
  history_path=R/'history.json';history=json.loads(history_path.read_text(encoding='utf-8')) if history_path.exists() else []
  history=[r for r in history if r['date']!=anchor or r.get('model')!=VERSION];history.append(summary);history.sort(key=lambda r:r['date'])
  history_path.write_text(json.dumps(history,ensure_ascii=False,indent=2),encoding='utf-8')
- reviewed=dict(intraday=intraday_summary,intraday_posts=today_posts,summary=summary,groups=groups,channels=channel_rows,factors=factors,trade_history=trade_history,history=history,margin=margin,statuses=statuses+market_status,posts=valid)
+ reviewed=dict(market_series=series,intraday=intraday_summary,intraday_posts=today_posts,summary=summary,groups=groups,channels=channel_rows,factors=factors,trade_history=trade_history,history=history,margin=margin,statuses=statuses+market_status,posts=valid)
  (R/'latest.json').write_text(json.dumps(reviewed,ensure_ascii=False,indent=2),encoding='utf-8')
  with (R/'帖子审阅.csv').open('w',encoding='utf-8-sig',newline='') as f:
   fields=['date','platform','topic','text','direction','chase','panic','novice','evidence','url'];w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader()

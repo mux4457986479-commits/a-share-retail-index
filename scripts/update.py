@@ -4,6 +4,7 @@ import json,sys,tempfile,subprocess,shutil,argparse,os
 from datetime import datetime,timezone,timedelta
 from engine import community,summarize,VERSION
 from publication_guard import withhold_sentiment
+from diagnostic_panels import build_panels
 R=Path(__file__).resolve().parents[1];TZ=timezone(timedelta(hours=8))
 def load(p,default):
  try:return json.loads(p.read_text(encoding='utf-8-sig'))
@@ -32,7 +33,7 @@ def prepare(raw,prior):
  def excerpts(posts):
   return [dict(date=p['date'],platform=p['platform'],topic=p['topic'],text=p['text'][:100],direction=p['direction'],chase=p['chase'],panic=p['panic'],novice=p['novice'],evidence=p['evidence'],url=p['url']) for p in posts[:300]]
  h=sorted(history.values(),key=lambda r:r['date'])[-180:]
- return dict(social_sources=prior.get('social_sources',{}),schema_version=1,model=VERSION,generated_at=raw['summary']['collected_at'],summary=raw['summary'],intraday=today,last_valid_daily=next((r for r in reversed(h) if r.get('score') is not None),None),history=h,community_history=intrahistory,groups=raw['groups'],intraday_groups=groups,channels=raw['channels'],intraday_channels=channels,factors=raw['factors'],trade_history=raw['trade_history'][-80:],margin=raw['margin'],statuses=raw['statuses'],posts=excerpts(raw['posts']),intraday_posts=excerpts(ps),update=dict(ok=True,attempted_at=raw['summary']['collected_at'],message='采集完成；是否发布综合分取决于覆盖门槛'),schedule='独立任务：北京时间工作日09:00—15:30每30分钟云端采集，16:15补充收盘快照；GitHub排队可能延迟。页面刷新仅重读已发布快照。')
+ return dict(panels=build_panels(raw.get('market_series',{}),raw['margin'],raw['summary']['date']),social_sources=prior.get('social_sources',{}),schema_version=1,model=VERSION,generated_at=raw['summary']['collected_at'],summary=raw['summary'],intraday=today,last_valid_daily=next((r for r in reversed(h) if r.get('score') is not None),None),history=h,community_history=intrahistory,groups=raw['groups'],intraday_groups=groups,channels=raw['channels'],intraday_channels=channels,factors=raw['factors'],trade_history=raw['trade_history'][-80:],margin=raw['margin'],statuses=raw['statuses'],posts=excerpts(raw['posts']),intraday_posts=excerpts(ps),update=dict(ok=True,attempted_at=raw['summary']['collected_at'],message='采集完成；三维独立展示，不合成情绪总分'),schedule='独立任务：北京时间工作日09:00—15:30每30分钟云端采集，16:15补充收盘快照；GitHub排队可能延迟。页面刷新仅重读已发布快照。')
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--input');args=ap.parse_args();dest=R/'data.json';prior=load(dest,{})
