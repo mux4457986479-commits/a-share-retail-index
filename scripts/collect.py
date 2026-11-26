@@ -63,7 +63,7 @@ def main():
  market=[];series={};market_status=[]
  for symbol,label in [('sh000001','上证指数'),('sz399006','创业板指'),('sh000300','沪深300')]:
   try:
-   u='https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param='+symbol+',day,,,100,qfq'
+   u='https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param='+symbol+',day,,,640,qfq'
    j=json.loads(fetch(u,'kline_'+symbol))['data'][symbol];rs=j.get('day') or j.get('qfqday')
    if not rs or len(rs)<25:raise ValueError('日线不足')
    series[label]=[dict(date=r[0],close=float(r[2]),volume=float(r[5])) for r in rs]

@@ -13,9 +13,9 @@
           "return5_pct": -2.8158384624415,
           "drawdown20_pct": -5.773311544184001,
           "rv20_annual_pct": 14.837084429119216,
-          "rv_percentile": 67.0886075949367,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
+          "rv_percentile": 67.46031746031746,
+          "rv_baseline_n": 252,
+          "rv_baseline_start": "2025-11-12",
           "rv_baseline_end": "2026-11-25"
         },
         {
@@ -26,9 +26,9 @@
           "return5_pct": -2.1152668614047188,
           "drawdown20_pct": -5.174781993528477,
           "rv20_annual_pct": 14.060497783424172,
-          "rv_percentile": 29.11392405063291,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
+          "rv_percentile": 32.93650793650794,
+          "rv_baseline_n": 252,
+          "rv_baseline_start": "2025-11-12",
           "rv_baseline_end": "2026-11-25"
         },
         {
@@ -39,9 +39,9 @@
           "return5_pct": -4.5139403664524185,
           "drawdown20_pct": -14.86157064154553,
           "rv20_annual_pct": 47.0712930139779,
-          "rv_percentile": 59.49367088607595,
-          "rv_baseline_n": 79,
-          "rv_baseline_start": "2026-07-30",
+          "rv_percentile": 80.55555555555556,
+          "rv_baseline_n": 252,
+          "rv_baseline_start": "2025-11-12",
           "rv_baseline_end": "2026-11-25"
         }
       ],
