@@ -3,6 +3,9 @@ from pathlib import Path
 from update import prepare
 from engine import classify,community,composite
 class Publication(unittest.TestCase):
+ def test_cloud_refresh_preserves_consented_social_aggregates(self):
+  social=dict(channels=[dict(platform='twitter',n=6)],posts=[])
+  self.assertEqual(prepare(self.fixture(),dict(social_sources=social))['social_sources'],social)
  def fixture(self):
   return dict(summary=dict(date='2026-11-25',collected_at='2026-11-26T12:00:00+08:00',score=None),history=[dict(date='2026-11-25',model='retail-v1.0',score=None)],intraday=dict(date='2026-11-26',community=None),intraday_posts=[],groups=[dict(topic='大盘')],posts=[],channels=[],factors=[],trade_history=[],margin=[],statuses=[])
  def test_same_day_valid_history_survives_low_coverage(self):
