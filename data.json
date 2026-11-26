@@ -11,7 +11,7 @@
     "posts": 1533,
     "market_posts": 496,
     "platforms": 2,
-    "coverage": "社区分类尚未通过语义验证，且未覆盖小红书、抖音和X；暂停社区分及综合分，交易因子单独展示。",
+    "coverage": "社区分类和跨平台抽样尚未通过验证；暂停社区分及综合分，交易因子单独展示。社交桥样本单独披露，不冒充全体散户。",
     "model": "retail-v1.0",
     "sentiment_validated": false
   },
@@ -9097,11 +9097,10 @@
   "assessment": {
     "status": "withheld",
     "validated": false,
-    "reason": "社区分类尚未通过语义验证，且未覆盖小红书、抖音和X；暂停社区分及综合分，交易因子单独展示。",
+    "reason": "社区分类和跨平台抽样尚未通过验证；暂停社区分及综合分，交易因子单独展示。社交桥样本单独披露，不冒充全体散户。",
     "missing_platforms": [
       "小红书",
-      "抖音",
-      "X"
+      "抖音"
     ],
     "release_requirements": [
       "独立人工标注样本与误判审查",
@@ -9110,5 +9109,44 @@
       "按平台披露覆盖与缺失，不按情绪结论选样"
     ],
     "note": "下列多空和恐慌命中只供审阅；多空方向不等于情绪，未命中不等于中性。"
+  },
+  "social_sources": {
+    "schema_version": 1,
+    "collected_at": "2026-11-26T16:54:45.962091+08:00",
+    "window_hours": 24,
+    "collector": "OpenBiliClaw本地桥",
+    "requires_local_computer": true,
+    "scoring_enabled": false,
+    "channels": [
+      {
+        "platform": "xiaohongshu",
+        "label": "小红书",
+        "n": 0,
+        "latest_published_at": null,
+        "transport": "OpenBiliClaw本地桥",
+        "sampling_basis": "桥接任务中性关键词搜索",
+        "status": "暂无24小时内可用样本"
+      },
+      {
+        "platform": "douyin",
+        "label": "抖音",
+        "n": 0,
+        "latest_published_at": null,
+        "transport": "OpenBiliClaw本地桥",
+        "sampling_basis": "桥接任务中性关键词搜索",
+        "status": "暂无24小时内可用样本"
+      },
+      {
+        "platform": "twitter",
+        "label": "X",
+        "n": 6,
+        "latest_published_at": "2026-11-26T16:11:26+08:00",
+        "transport": "OpenBiliClaw本地桥",
+        "sampling_basis": "个性化发现池，非代表性抽样",
+        "status": "有24小时内公开样本；尚未达到代表性验证"
+      }
+    ],
+    "posts": [],
+    "note": "仅平台样本数、时间和采集状态；原文、链接、作者、登录状态与凭据均留在本机。X发现池为个性化便利抽样，不参与情绪评分。"
   }
 }

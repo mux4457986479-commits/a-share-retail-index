@@ -45,7 +45,7 @@ def main():
     if prior.get('history'):atomic(t/'history.json',prior['history'])
     subprocess.run([sys.executable,str(t/'collect.py')],check=True,timeout=300)
     raw=load(t/'latest.json',{})
-  data=withhold_sentiment(prepare(raw,prior));atomic(dest,data)
+  data=prepare(raw,prior);data['social_sources']=prior.get('social_sources',{});data=withhold_sentiment(data);atomic(dest,data)
   print(json.dumps(dict(date=data['summary']['date'],score=data['summary']['score'],intraday=data['intraday'],history=len(data['history'])),ensure_ascii=False))
  except Exception as e:
   if prior:
