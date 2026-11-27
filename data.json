@@ -84,7 +84,7 @@
   },
   "social_sources": {
     "schema_version": 1,
-    "collected_at": "2026-11-27T09:10:05.580444+08:00",
+    "collected_at": "2026-11-27T09:40:05.317903+08:00",
     "window_hours": 24,
     "collector": "OpenBiliClaw本地桥",
     "requires_local_computer": true,
