@@ -84,7 +84,7 @@
   },
   "social_sources": {
     "schema_version": 1,
-    "collected_at": "2026-11-26T17:10:03.326694+08:00",
+    "collected_at": "2026-11-27T09:10:05.580444+08:00",
     "window_hours": 24,
     "collector": "OpenBiliClaw本地桥",
     "requires_local_computer": true,
@@ -102,20 +102,20 @@
       {
         "platform": "douyin",
         "label": "抖音",
-        "n": 0,
-        "latest_published_at": null,
+        "n": 1,
+        "latest_published_at": "2026-11-26T16:16:54+08:00",
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "桥接任务中性关键词搜索",
-        "status": "指定关键词搜索排队中；尚无有效样本"
+        "status": "本地应用未连接；仅保留可核对日期的已有样本"
       },
       {
         "platform": "twitter",
         "label": "X",
-        "n": 8,
+        "n": 11,
         "latest_published_at": "2026-11-26T16:51:31+08:00",
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "个性化发现池，非代表性抽样",
-        "status": "有24小时内公开样本；尚未达到代表性验证"
+        "status": "本地应用未连接；仅保留可核对日期的已有样本"
       }
     ],
     "posts": [],
