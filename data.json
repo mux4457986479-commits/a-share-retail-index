@@ -84,7 +84,7 @@
   },
   "social_sources": {
     "schema_version": 1,
-    "collected_at": "2026-11-27T09:40:05.317903+08:00",
+    "collected_at": "2026-11-27T10:10:04.421159+08:00",
     "window_hours": 24,
     "collector": "OpenBiliClaw本地桥",
     "requires_local_computer": true,
@@ -111,7 +111,7 @@
       {
         "platform": "twitter",
         "label": "X",
-        "n": 11,
+        "n": 10,
         "latest_published_at": "2026-11-26T16:51:31+08:00",
         "transport": "OpenBiliClaw本地桥",
         "sampling_basis": "个性化发现池，非代表性抽样",
